@@ -1,600 +1,262 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Jonathan Woodley</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="assets/css/brands.min.css" rel="stylesheet">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Woodley | Project Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/portfolio-2026.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/profile.PNG" alt="" /></span>
-					<h1 id="logo"><a href="#">Jonathan Woodley</a></h1>
-					<p>A look into the skills<br />
-					and projects</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Things I Am Learning</a></li>
-						<li><a href="#five">Work Philosophy</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/jonathanwoodley" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/woodleyj" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="/contact.html" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+    <header class="container">
+        <div class="identity-lockup">
+            <img src="images/profile.PNG" alt="Jonathan Woodley" class="profile-img">
+            <div>
+                <h1 class="hero-title">Jonathan Woodley</h1>
+                <p class="hero-subtitle">Automation Specialist • ML Engineer • Data Analyst</p>
+            </div>
+        </div>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <main class="container">
+        
+        <!-- ERA 1: AI Agents & Personal Assistants (2025-2026) -->
+        <section class="era-block">
+            <h2 class="section-label">Agentic Systems & AI (Current)</h2>
+            <div class="project-list">
+                
+                <div class="project-item">
+                    <div class="project-meta">2026 / Agentic</div>
+                    <div class="project-content">
+                        <h3>Project Alfred <span class="status-pill">Active</span></h3>
+                        <p class="project-desc">A sophisticated multi-bridge personal assistant (Discord, ESP32, Gemini Live API). Features a custom "Soul" architecture, 4-tier memory compression system, and deep Home Assistant integration for proactive estate management.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span><span class="tag">Gemini Multimodal Live</span><span class="tag">RAG</span><span class="tag">Home Assistant</span>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Main -->
-					<div id="main">
+                <div class="project-item">
+                    <div class="project-meta">2026 / Utility</div>
+                    <div class="project-content">
+                        <h3>TASS (Terminal Assistant)</h3>
+                        <p class="project-desc">A lightweight CLI AI assistant that translates natural language to precise shell commands with OS awareness (PowerShell/Bash) and automated model fallback logic.</p>
+                        <div class="tech-tags">
+                            <span class="tag">CLI</span><span class="tag">Gemini API</span><span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>About</h2>
-										<p>Hello! I'm Jonathan Woodley. <br /> IT Geek, Sustainability Reporting/Data Analyst, and Data Science/Machine Learning Enthusiast.</p>
-									</header>
-									<p><b>*NOTE*</b> This page is a work-in-progress. Bear with me while I upload all the fun projects I've worked on! </p>
-									<p></p>
-								</div>
-							</section>
+                <div class="project-item">
+                    <div class="project-meta">2026 / Fintech</div>
+                    <div class="project-content">
+                        <h3>Polymarket Interactive CLI</h3>
+                        <p class="project-desc">Real-time terminal dashboard for prediction markets. Interacts with the Gamma and CLOB APIs for market exploration and order book execution.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Rich</span><span class="tag">Py_clob_client</span><span class="tag">API Integration</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3><i class="fa-solid fa-check"></i> Skillsets, acquired.</h3>
-									<p>Here are some of my core competencies:</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code"><i class="fa-brands fa-python"></i> Python</li>
-										<li class="icon solid fa-chart-line"><i class="fa-brands fa-microsoft"></i> Power BI</li>
-										<li class="icon solid fa-table"><i class="fa-solid fa-arrow-pointer"></i> MS Office/Google Suite</li>
-										<li class="icon solid fa-bolt"><i class="fa-brands fa-microsoft"></i> Power Apps/Power Automate</li>
-										<li class="icon solid fa-robot"><i class="fa-brands fa-python"></i> Data Automation</li>
-										<li class="icon solid fa-database"><i class="fa-solid fa-table"></i> SQLite3/PostgreSQL</li>
-										<li class="icon solid fa-chart-line"><i class="fa-brands fa-python"></i> Machine Learning: Regression</li>
-										<li class="icon solid fa-chalkboard-user"><i class="fa-brands fa-python"></i> Machine Learning: Classification</li>
-										
-									</ul>
-									<h5>Most Recent Certifications:</h5>
-									<table>
-										<tr>
-											<td>
-												<!-- certification 1-->
-												<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TJLXD9DD3966" class="image"><img src="images/badges/ML_specialization.png" alt="Machine Learning Specialization" width="340" height="270"></a>
-												
-											</td>
-											<!-- <td> -->
-												<!-- certification 2 (just image) -->
-												<!-- <a class="image"><img src="images/badges/AI Skills Challenge - badge - EN-US.png" alt="AI Skills Challenge" width="340" height="270"></a> -->
-											<!-- </td> -->
-											<td>
-												<!-- certification 2 (just image) -->
-												<a href="https://www.codecademy.com/profiles/woodleyj31/certificates/5cab64c55f1de8039db366ef" class="image"><img src="images/badges/Codecademy_Build_MLModel_Python.png" alt="Building Machine Learning Models in Python" width="340" height="270"></a>
-											</td>
-											<td>
-												<!-- certification 3 (just image) -->
-												<div data-iframe-width="340" data-iframe-height="270" data-share-badge-id="a9e544d4-8994-4602-8508-9a616dab1eb7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<!-- certification 4 (just image) -->
-												<a href="https://www.coursera.org/account/accomplishments/certificate/WAU2SHMX6TVH" class="image"><img src="images/badges/Advanced_learning_algorithms.png" alt="Advanced Learning Algorithms" width="340" height="270"></a>
-											</td>
-											<td>
-												<!-- certification 5 (just image) -->
-												<a href="https://www.coursera.org/account/accomplishments/certificate/53CLPQNQ9U67" class="image"><img src="images/badges/Unsupervised_learning.png" alt="Unsupervised Learning, Recommenders, Reinforcement Learning" width="340" height="270"></a>
-											</td>
-											<td>
-												<!-- certification 6 (just image) -->
-												<a href="https://www.coursera.org/account/accomplishments/certificate/VQBMKKAWBVNK" class="image"><img src="images/badges/Coursera_Supervised_Machine_Learning.png" alt="Supervised Machine Learning" width="340" height="270"></a>	
-											</td>
-											
-										</tr>
-									</table>
-									<p>There are more!  Some others that aren't listed include several Microsoft Certifications, Powershell, and soft skills...  I am constantly learning
-										and generally pick up skills as needed for my role.
-									</p>
-								</div>
-							</section>
+            </div>
+        </section>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Here are some of my past achievements:</p>
-									<div class="features">
-										<article>
-											<a class="image"><img src="images/bingmapsapi/bingmapsapi.png" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-brands fa-python"></i> Calculating Commute Distance with Bing Maps API</h4>
-												<p>To understand the amount of Greenhouse Gas emissions (GHG) come from commuting, I used internal address data on 30k+ employees to query the Bing Maps API.  I then combined the distance data with national statistical database and emission factors to arrive at an accurate estimate of Scope 3.7 emissions! </p>
-											</div>
-										</article>
-										<article>
-											<a href="https://woodleyj-ytsummarizer.hf.space" class="image"><img src="images/ytsummary/app.png" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-brands fa-python"></i> Summarize YouTube Video</h4>
-												<p>A Python/Streamlit web app that utilizes Whisper to transcribe a YouTube video and then summarizes it using the OpenAI API. <br>Try it out: <a href="https://woodleyj-ytsummarizer.hf.space">woodleyj-ytsummarizer.hf.space</a></p>
-												<p>**UPDATE** App is no longer online, but you can still check out the source code and run it locally if you wish: <a href="https://github.com/woodleyj/SummarizeYouTubeVideo">GitHub</a>.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><iframe title="emissions - Map" width="408" height="237" src="https://app.powerbi.com/view?r=eyJrIjoiYzViYTliMWQtYTQyNi00YjZlLTgzYTMtODg5OGZlZGVkOWQwIiwidCI6ImU3Mzg3NzMwLWZiODEtNDk2YS05NTc5LTAxODBjNjEwNDlmZCIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe></a>
-											<div class="inner">
-												<a href="/emissions-report-power-bi.html"><h4><i class="fa-brands fa-microsoft"></i> Emissions Report with Power BI</h4>
-												<p>Explore public EPA emissions data from 2010 - 2021.  This project taught me how to work with a large dataset (500k+ rows)
-													and bring data from multiple sources together.  I also had the opportunity to use my favorite general-purpose tool, Python, to download location
-													data into the data source.
-												</p></a>
-											</div>
-										</article>
-										<article>
-											<a href="https://github.com/woodleyj/HabitTracker" class="image"><img src="images/habit_tracker.PNG" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-brands fa-python"></i> Habit Tracker CLI</h4>
-												<p>A cool little project I did for University.  This Command-line interface (CLI) is a perfect lightweight, easy-to-use tool for tracking habits.
-													If you're a CLI-nerd then this is a good replacement for your other desktop habit-tracking app.
-												</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/dropin/request_support.png" alt="" /></a>
-											<div class="inner">
-												<h4><i class="icon solid fa-bolt"></i> Queue Notifications with Power Apps and MS Teams</h4>
-												<p>A polite and convenient queue notification system that even a Swede would be happy to use.  This project helped solve the questions, "Is that person looking for help right now?" 
-													(IT perspective), and "Who do I ask for help / is someone available?" (stakeholder perspective).
-												</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/coh/speaking_1.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-solid fa-users"></i> Collaboration Open House</h4>
-												<p>An idea to bring knowledge of services to the stakeholders, realized.  I organized several conferences across Europe and assisted 
-													with planning several more across the globe.  The result?  Thousands of visitors, lots of fun, and many skills acquired thanks to the help
-													from everyone involved.
-												</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/process_mgmt/process_management.png" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-solid fa-chalkboard-user"></i> Developing Training to Upskill the Business</h4>
-												<p>Remote collaboration at it's finest - this was a fun project!  I worked with a small team of three to develop training to upskill a business unit. 
-												We used Articulate 360 to create a professional and interactive training module.  It was very well-received and was eventually rolled out company-wide (40k+ users).
-												</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/stock_automation/code_glasses.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-brands fa-python"></i> Automating Stock Data Retrieval</h4>
-												<p>A personal project in which I got tired of visiting the same websites everyday.  So I pulled the data together into Google Sheets for easy reviewing
-													in a single location.
-												</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/stock_dashboard/dashboard.png" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-solid fa-table"></i> Building a Stock Trading Dashboard in Google Sheets</h4>
-												<p>An extension to my data retrieval project, this dashboard and underlying dataset helped give me a good overview of my stock portfolio and recent trades.
-													 Complete with statistics of past performance.
-												</p>
-											</div>
-										</article>
-										<!-- <article>
-											<a href="#" class="image"><img src="images/sweden/plane.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><i class="fa-solid fa-plane-departure"></i> Moving To Sweden</h4>
-												<p>Ok, so this isn't technical by any means, but I still consider it a great accomplishment!  I accepted a job offer in Sweden as part of an effort to globalize
-													and unify an otherwise segmented team. As a bonus, I picked up many skills that I still use today working with different people in a variety of cultures as
-													part of a multi-national company. 
-												</p>
-											</div>
-										</article> -->
-									</div>
-								</div>
-							</section>
+        <!-- ERA 2: Machine Learning & Data Engineering (2023-2025) -->
+        <section class="era-block">
+            <h2 class="section-label">Machine Learning & Data Engineering</h2>
+            <div class="project-list">
+                
+                <div class="project-item">
+                    <div class="project-meta">2025 / Visualization</div>
+                    <div class="project-content">
+                        <h3>Comfort Zones</h3>
+                        <p class="project-desc">Generating heatmaps of "comfortable days" across Europe using 10 years of historical weather data from the Meteostat API. A focus on clean data pipelines and visualization.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Meteostat API</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Skillsets, loading... <i class="fa-solid fa-spinner fa-pulse"></i></h3>
-									<p>Here are some things I am currently studying, have some knowledge, and/or are interested in, mostly in pursuit of my career aspirations: <strong>IT Business Analyst/Data Scientist/Machine Learning Engineer</strong></p>
-									<ol class="fa-ul">
-										<li><i class="fa-solid fa-check-square"></i> Python: Pandas</li>
-										<li><i class="fa-solid fa-check-square"></i> Python: Streamlit library / Web app development for data visualization</li>
-										<li><i class="fa-solid fa-check-square"></i> OpenAI API - GPT and Whisper</li>
-										<li><i class="fa-solid fa-check-square"></i> Pinecone Vector Database</li>
-										<li><i class="fa-solid fa-check-square"></i> Advanced Mathematics: Descriptive Statistics, Linear Algebra, and Differential Calculus</li>
-										<li><i class="fa-solid fa-check-square"></i> Sustainability - Emissions consolidation, tracking and reporting</li>
-									</ol>
-								</div>
-								
-							</section>
+                <div class="project-item">
+                    <div class="project-meta">2024 / MLOps</div>
+                    <div class="project-content">
+                        <h3>AQI Forecasting</h3>
+                        <p class="project-desc">A professional ML lifecycle implementation using Cookiecutter Data Science. Forecasts ozone and pollutant levels using XGBoost with hyperparameter tuning via GridSearchCV.</p>
+                        <div class="tech-tags">
+                            <span class="tag">XGBoost</span><span class="tag">MLOps</span><span class="tag">StandardScaler</span><span class="tag">GridSearchCV</span>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Five -->
-						<section id="five">
-							<div class="container">
-								<a href="https://youtube.com/shorts/1WG0Mw0kCGg?feature=share"><h4><u>Ostinato Rigore.</u></h4></a>
-							</div>
-						</section>
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
+                <div class="project-item">
+                    <div class="project-meta">2023 / Financial Automation</div>
+                    <div class="project-content">
+                        <h3>TradeTracker</h3>
+                        <p class="project-desc">Automated system to consolidate TDAmeritrade trade executions into a Google Sheets dashboard. Handled complex multi-leg options strategy grouping.</p>
+                        <div class="tech-tags">
+                            <span class="tag">TDAmeritrade API</span><span class="tag">OAuth2</span><span class="tag">Google Sheets API</span>
+                        </div>
+                    </div>
+                </div>
 
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
+                <div class="project-item">
+                    <div class="project-meta">2023 / NLP</div>
+                    <div class="project-content">
+                        <h3>YouTube Video Summarizer</h3>
+                        <p class="project-desc">Full-stack Streamlit app combining OpenAI Whisper for transcription and GPT-4 for semantic summarization of video content.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Streamlit</span><span class="tag">Whisper</span><span class="tag">OpenAI API</span>
+                        </div>
+                    </div>
+                </div>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+                <div class="project-item">
+                    <div class="project-meta">2023 / Foundational ML</div>
+                    <div class="project-content">
+                        <h3>Data Science 2023 Cluster</h3>
+                        <p class="project-desc">A series of rigorous analytical projects including Yelp Rating Regression (170MB JSON), Twitter Virality Classification (KNN/Naive Bayes), and OKCupid Profile Analysis.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Scikit-learn</span><span class="tag">Regression</span><span class="tag">Classification</span>
+                        </div>
+                    </div>
+                </div>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
+            </div>
+        </section>
 
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
+        <!-- ERA 3: Sustainability & Corporate Systems -->
+        <section class="era-block">
+            <h2 class="section-label">Sustainability & Corporate Systems</h2>
+            <div class="project-list">
+                
+                <div class="project-item">
+                    <div class="project-meta">Corporate / Geospatial</div>
+                    <div class="project-content">
+                        <h3>Commute GHG Emissions Analysis</h3>
+                        <p class="project-desc">Quantified Scope 3.7 emissions for 30k+ employees by querying the Bing Maps API for commute distances and applying national statistical emission factors.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Bing Maps API</span><span class="tag">Sustainability Reporting</span><span class="tag">GHG Protocol</span>
+                        </div>
+                    </div>
+                </div>
 
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
+                <div class="project-item">
+                    <div class="project-meta">BI / Data Analyst</div>
+                    <div class="project-content">
+                        <h3>EPA Emissions Dashboard (Power BI)</h3>
+                        <p class="project-desc">Comprehensive analysis of public EPA data (2010-2021) involving 500k+ rows. Consolidated multiple data sources using Python-based ingestion scripts.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
 
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
+                <div class="project-item">
+                    <div class="project-meta">Low-Code / Automation</div>
+                    <div class="project-content">
+                        <h3>Queue Notification Systems</h3>
+                        <p class="project-desc">Developed a "polite" IT support queue using Power Apps and MS Teams to improve stakeholder visibility and triage efficiency.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Power Platform</span><span class="tag">MS Teams</span>
+                        </div>
+                    </div>
+                </div>
 
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
+            </div>
+        </section>
 
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
+        <!-- ERA 4: Strategic Leadership & Learning -->
+        <section class="era-block">
+            <h2 class="section-label">Strategic Leadership & Learning</h2>
+            <div class="project-list">
+                
+                <div class="project-item">
+                    <div class="project-meta">Leadership</div>
+                    <div class="project-content">
+                        <h3>Collaboration Open House</h3>
+                        <p class="project-desc">Organized and led international service-knowledge conferences across Europe. Facilitated knowledge transfer between technical teams and thousands of global stakeholders.</p>
+                    </div>
+                </div>
 
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
+                <div class="project-item">
+                    <div class="project-meta">Learning Design</div>
+                    <div class="project-content">
+                        <h3>Interactive Business Upskilling</h3>
+                        <p class="project-desc">Co-developed interactive training modules using Articulate 360 to upskill a business unit of 40k+ users in remote collaboration technologies.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Articulate 360</span><span class="tag">Instructional Design</span>
+                        </div>
+                    </div>
+                </div>
 
-								</div>
-							</section>
-						-->
+            </div>
+        </section>
 
-					</div>
+        <!-- ERA 5: Academic & Legacy -->
+        <section class="era-block">
+            <h2 class="section-label">Academic & Legacy</h2>
+            <div class="project-list">
+                
+                <div class="project-item">
+                    <div class="project-meta">2022 / Academic</div>
+                    <div class="project-content">
+                        <h3>Habit Tracker CLI</h3>
+                        <p class="project-desc">A lightweight Python-based command-line interface for personal habit tracking. Developed as a final project for University.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span><span class="tag">SQLite3</span><span class="tag">CLI</span>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Jonathan Woodley. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+            </div>
+        </section>
 
-			</div>
+        <!-- Skills Summary -->
+        <section class="era-block">
+            <h2 class="section-label">Technical Skillsets</h2>
+            <div class="skills-grid">
+                <div class="skill-cat">
+                    <h4>Artificial Intelligence</h4>
+                    <ul>
+                        <li>Gemini Multimodal Live API</li>
+                        <li>RAG & Vector Embeddings</li>
+                        <li>Whisper & LLM Integration</li>
+                        <li>Autonomous Agent Orchestration</li>
+                    </ul>
+                </div>
+                <div class="skill-cat">
+                    <h4>Data Science & ML</h4>
+                    <ul>
+                        <li>Python (Pandas, Scikit-learn)</li>
+                        <li>XGBoost & MLOps Pipelines</li>
+                        <li>Geospatial & Emissions Analysis</li>
+                        <li>SQL (PostgreSQL, SQLite3)</li>
+                    </ul>
+                </div>
+                <div class="skill-cat">
+                    <h4>Data Analysis & Viz</h4>
+                    <ul>
+                        <li>Power BI (Advanced DAX)</li>
+                        <li>Power Platform (Apps/Automate)</li>
+                        <li>Google Sheets Automation</li>
+                        <li>GHG Protocol & Reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    </main>
 
-	</body>
+    <footer class="container">
+        <div class="footer-links">
+            <a href="https://github.com/woodleyj" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jonathanwoodley" target="_blank">LinkedIn</a>
+            <a href="mailto:contact@woodleyj.io">Contact</a>
+        </div>
+        <p class="copyright">&copy; 2026 Jonathan Woodley. Built with Ostinato Rigore.</p>
+    </footer>
+
+</body>
 </html>
