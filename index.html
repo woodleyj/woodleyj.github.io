@@ -315,13 +315,48 @@
         <section class="era-block">
             <h2 class="section-label">Certifications & Badges</h2>
             <div class="cert-track">
-                <div class="cert-item" title="ML Specialization"><img src="images/badges/ML_specialization.png" alt="ML Specialization"></div>
-                <div class="cert-item" title="Advanced Learning Algorithms"><img src="images/badges/Advanced_learning_algorithms.png" alt="Advanced Learning Algorithms"></div>
-                <div class="cert-item" title="Unsupervised Learning"><img src="images/badges/Unsupervised_learning.png" alt="Unsupervised Learning"></div>
-                <div class="cert-item" title="Supervised Machine Learning"><img src="images/badges/Coursera_Supervised_Machine_Learning.png" alt="Supervised Machine Learning"></div>
-                <div class="cert-item" title="AI Skills Challenge"><img src="images/badges/AI Skills Challenge - badge - EN-US.png" alt="AI Skills Challenge"></div>
-                <div class="cert-item" title="Power BI Advanced"><img src="images/badges/PowerBI.png" alt="Power BI Advanced"></div>
-                <div class="cert-item" title="Codecademy: Build ML Model Python"><img src="images/badges/Codecademy_Build_MLModel_Python.png" alt="Codecademy: Build ML Model Python"></div>
+                <div class="cert-item" 
+                     data-title="Machine Learning Specialization" 
+                     data-org="DeepLearning.AI / Stanford"
+                     data-val="Comprehensive 3-course series covering the foundations of modern AI. Demonstrates mastery of supervised and unsupervised learning, and best practices for building real-world ML systems.">
+                    <img src="images/badges/ML_specialization.png" alt="ML Specialization">
+                </div>
+                <div class="cert-item" 
+                     data-title="Advanced Learning Algorithms" 
+                     data-org="DeepLearning.AI"
+                     data-val="In-depth focus on Neural Networks, Decision Trees, and Multi-class Classification. Validates the ability to build and tune complex models for non-linear data patterns.">
+                    <img src="images/badges/Advanced_learning_algorithms.png" alt="Advanced Learning Algorithms">
+                </div>
+                <div class="cert-item" 
+                     data-title="Unsupervised Learning, Recommenders, Reinforcement Learning" 
+                     data-org="DeepLearning.AI"
+                     data-val="Covers clustering (K-means), anomaly detection, and building recommender systems. Essential for personalized user experiences and pattern discovery in unlabeled data.">
+                    <img src="images/badges/Unsupervised_learning.png" alt="Unsupervised Learning">
+                </div>
+                <div class="cert-item" 
+                     data-title="Supervised Machine Learning" 
+                     data-org="DeepLearning.AI"
+                     data-val="Foundational mastery of Linear and Logistic Regression. Provides the mathematical rigour required to understand how models learn and how to evaluate their performance accurately.">
+                    <img src="images/badges/Coursera_Supervised_Machine_Learning.png" alt="Supervised Machine Learning">
+                </div>
+                <div class="cert-item" 
+                     data-title="Microsoft AI Skills Challenge" 
+                     data-org="Microsoft"
+                     data-val="Validation of proficiency in Azure AI services, including Azure OpenAI, Cognitive Search, and Form Recognizer. Focuses on deploying production-ready AI solutions.">
+                    <img src="images/badges/AI Skills Challenge - badge - EN-US.png" alt="AI Skills Challenge">
+                </div>
+                <div class="cert-item" 
+                     data-title="Power BI Data Analyst Associate" 
+                     data-org="Microsoft"
+                     data-val="Expertise in data modeling, DAX, and advanced visualization. Proven ability to transform fragmented business data into actionable strategic insights at scale.">
+                    <img src="images/badges/PowerBI.png" alt="Power BI Advanced">
+                </div>
+                <div class="cert-item" 
+                     data-title="Build a Machine Learning Model with Python" 
+                     data-org="Codecademy"
+                     data-val="Practical implementation of ML lifecycles. Demonstrates hands-on ability to clean data, engineer features, and deploy models using the Scikit-learn ecosystem.">
+                    <img src="images/badges/Codecademy_Build_MLModel_Python.png" alt="Codecademy: Build ML Model Python">
+                </div>
             </div>
         </section>
 
@@ -336,27 +371,63 @@
         <p class="copyright">&copy; 2026 Jonathan Woodley. Built with Ostinato Rigore.</p>
     </footer>
 
-    <!-- Certification Zoom Overlay -->
-    <div class="cert-overlay" id="certOverlay">
-        <img src="" alt="Expanded Certification" id="overlayImg">
+    <!-- Certification Modal Components -->
+    <div class="cert-blur-overlay" id="certBlurOverlay"></div>
+    <div class="cert-modal" id="certModal">
+        <div class="modal-content">
+            <div class="modal-left">
+                <img src="" alt="Expanded Certificate" id="modalImg">
+            </div>
+            <div class="modal-right">
+                <h3 id="modalTitle">Certificate Title</h3>
+                <p id="modalOrg" class="modal-subtitle">Organization Name</p>
+                <div class="modal-divider"></div>
+                <p class="modal-label">Value Proposition</p>
+                <p id="modalVal" class="modal-desc">This is why this certification matters for a recruiter.</p>
+                <button class="modal-close-btn" id="modalCloseBtn">Close</button>
+            </div>
+        </div>
     </div>
 
     <script>
-        const overlay = document.getElementById('certOverlay');
-        const overlayImg = document.getElementById('overlayImg');
-        const certImages = document.querySelectorAll('.cert-item img');
+        const certItems = document.querySelectorAll('.cert-item');
+        const modal = document.getElementById('certModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalOrg = document.getElementById('modalOrg');
+        const modalVal = document.getElementById('modalVal');
+        const blurOverlay = document.getElementById('certBlurOverlay');
+        const closeBtn = document.getElementById('modalCloseBtn');
 
-        certImages.forEach(img => {
-            img.addEventListener('click', () => {
-                overlayImg.src = img.src;
-                overlay.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
+        certItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                const img = item.querySelector('img');
+                
+                // Populate data
+                modalImg.src = img.src;
+                modalTitle.textContent = item.dataset.title;
+                modalOrg.textContent = item.dataset.org;
+                modalVal.textContent = item.dataset.val;
+                
+                // Show modal
+                modal.classList.add('active');
+                blurOverlay.classList.add('active');
+                document.body.classList.add('cert-open');
+                
+                e.stopPropagation();
             });
         });
 
-        overlay.addEventListener('click', () => {
-            overlay.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
+        const closeAll = () => {
+            modal.classList.remove('active');
+            blurOverlay.classList.remove('active');
+            document.body.classList.remove('cert-open');
+        };
+
+        blurOverlay.addEventListener('click', closeAll);
+        closeBtn.addEventListener('click', closeAll);
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeAll();
         });
     </script>
 
