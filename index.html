@@ -336,5 +336,29 @@
         <p class="copyright">&copy; 2026 Jonathan Woodley. Built with Ostinato Rigore.</p>
     </footer>
 
+    <!-- Certification Zoom Overlay -->
+    <div class="cert-overlay" id="certOverlay">
+        <img src="" alt="Expanded Certification" id="overlayImg">
+    </div>
+
+    <script>
+        const overlay = document.getElementById('certOverlay');
+        const overlayImg = document.getElementById('overlayImg');
+        const certImages = document.querySelectorAll('.cert-item img');
+
+        certImages.forEach(img => {
+            img.addEventListener('click', () => {
+                overlayImg.src = img.src;
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+    </script>
+
 </body>
 </html>
