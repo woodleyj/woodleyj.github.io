@@ -4,35 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Woodley · Portfolio</title>
+    <meta name="description" content="Jonathan Woodley builds automation that sits between sensors, models, and the systems they run — agents, embedded interfaces, and emissions pipelines.">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/kami-portfolio.css">
+    <link rel="stylesheet" href="assets/css/blueprint.css">
 </head>
 <body>
 
-    <header class="container">
-        <div class="identity-lockup">
-            <img src="images/profile.PNG" alt="Jonathan Woodley" class="profile-img">
+    <header class="container hero">
+        <div class="hero-grid">
             <div>
-                <h1 class="hero-title">Jonathan Woodley</h1>
-                <p class="hero-subtitle">Automation Specialist · AI Orchestration · Sustainability Systems</p>
+                <div class="identity-lockup">
+                    <img src="images/profile.PNG" alt="Jonathan Woodley" class="profile-img">
+                    <h1 class="hero-title">Jonathan Woodley</h1>
+                </div>
+                <p class="hero-lede">Builds the automation between sensors, models, and the systems they run.</p>
+                <p class="hero-sub">Agents, embedded interfaces, and emissions pipelines — Python most days, a soldering iron on the rest.</p>
             </div>
+
+            <aside class="status-panel">
+                <h2>Currently building</h2>
+                <ul>
+                    <li><span class="status-dot"></span><span class="proj-name">Project Alfred</span><span class="proj-cat">Agentic</span></li>
+                    <li><span class="status-dot"></span><span class="proj-name">ESP32-UI</span><span class="proj-cat">Hardware</span></li>
+                    <li><span class="status-dot"></span><span class="proj-name">Climate Data Hub</span><span class="proj-cat">Corporate BI</span></li>
+                </ul>
+            </aside>
         </div>
     </header>
 
-    <div style="height: 2rem;"></div>
-
     <main class="container">
-        
+
         <!-- ERA 1: AI Agents & Personal Assistants (2025-2026) -->
         <details class="era-block" open>
             <summary>
-                <h2 class="section-label">Agentic Systems & AI</h2>
+                <span class="sheet-index">01</span>
+                <h2 class="section-label">Agentic Systems &amp; AI</h2>
+                <span class="chevron">&rsaquo;</span>
             </summary>
             <div class="project-list">
 
                 <div class="project-item">
-                    <div class="project-meta">2026 / Agentic</div>
+                    <div class="project-meta">
+                        <span class="ref-id">AI&middot;01</span>
+                        <span class="ref-cat">2026 / Agentic</span>
+                    </div>
                     <div class="project-content">
                         <h3>Project Alfred <span class="status-pill">Active</span></h3>
                         <p class="project-desc">A sophisticated multi-bridge personal assistant (Discord, ESP32, Gemini Live API). Features a custom "Soul" architecture, 4-tier memory compression system, and deep Home Assistant integration for proactive estate management.</p>
@@ -43,7 +59,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2026 / Hardware</div>
+                    <div class="project-meta">
+                        <span class="ref-id">AI&middot;02</span>
+                        <span class="ref-cat">2026 / Hardware</span>
+                    </div>
                     <div class="project-content">
                         <h3>ESP32-UI <span class="status-pill">Active</span></h3>
                         <p class="project-desc">A data-driven smart home control panel built for the Waveshare ESP32-S3-Touch. Features dynamic UI rebuilding via MQTT, hybrid IP/Geocoding location services, and real-time environment-adaptive visuals.</p>
@@ -54,7 +73,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2026 / Utility</div>
+                    <div class="project-meta">
+                        <span class="ref-id">AI&middot;03</span>
+                        <span class="ref-cat">2026 / Utility</span>
+                    </div>
                     <div class="project-content">
                         <h3>TASS (Terminal Assistant)</h3>
                         <p class="project-desc">A lightweight CLI AI assistant that translates natural language to precise shell commands with OS awareness (PowerShell/Bash) and automated model fallback logic.</p>
@@ -65,7 +87,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2026 / Fintech</div>
+                    <div class="project-meta">
+                        <span class="ref-id">AI&middot;04</span>
+                        <span class="ref-cat">2026 / Fintech</span>
+                    </div>
                     <div class="project-content">
                         <h3>Polymarket Interactive CLI</h3>
                         <p class="project-desc">Real-time terminal dashboard for prediction markets. Interacts with the Gamma and CLOB APIs for market exploration and order book execution.</p>
@@ -77,15 +102,21 @@
 
             </div>
         </details>
+
         <!-- ERA 2: Machine Learning & Data Engineering (2023-2025) -->
         <details class="era-block">
             <summary>
-                <h2 class="section-label">Machine Learning & Data Engineering</h2>
+                <span class="sheet-index">02</span>
+                <h2 class="section-label">Machine Learning &amp; Data Engineering</h2>
+                <span class="chevron">&rsaquo;</span>
             </summary>
             <div class="project-list">
-                
+
                 <div class="project-item">
-                    <div class="project-meta">2025 / Visualization</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;01</span>
+                        <span class="ref-cat">2025 / Visualization</span>
+                    </div>
                     <div class="project-content">
                         <h3>Comfort Zones</h3>
                         <p class="project-desc">Generating heatmaps of "comfortable days" across Europe using 10 years of historical weather data from the Meteostat API. A focus on clean data pipelines and visualization.</p>
@@ -96,7 +127,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2024 / Automation</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;02</span>
+                        <span class="ref-cat">2024 / Automation</span>
+                    </div>
                     <div class="project-content">
                         <h3>flipper</h3>
                         <p class="project-desc">A robust web scraping and data extraction utility with a Streamlit interface. Automates the gathering of dynamic web content using Selenium and BeautifulSoup.</p>
@@ -107,7 +141,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2024 / MLOps</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;03</span>
+                        <span class="ref-cat">2024 / MLOps</span>
+                    </div>
                     <div class="project-content">
                         <h3>AQI Forecasting</h3>
                         <p class="project-desc">A professional ML lifecycle implementation using Cookiecutter Data Science. Forecasts ozone and pollutant levels using XGBoost with hyperparameter tuning via GridSearchCV.</p>
@@ -118,7 +155,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2023 / Financial Automation</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;04</span>
+                        <span class="ref-cat">2023 / Financial Automation</span>
+                    </div>
                     <div class="project-content">
                         <h3>TradeTracker</h3>
                         <p class="project-desc">Automated system to consolidate TDAmeritrade trade executions into a Google Sheets dashboard. Handled complex multi-leg options strategy grouping.</p>
@@ -129,7 +169,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2023 / NLP</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;05</span>
+                        <span class="ref-cat">2023 / NLP</span>
+                    </div>
                     <div class="project-content">
                         <h3>QueryASR</h3>
                         <p class="project-desc">A RAG-based semantic search engine for massive corporate sustainability reports. Transforms static PDFs into interactive knowledge bases using vector embeddings and Llama-index.</p>
@@ -140,7 +183,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2023 / NLP</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;06</span>
+                        <span class="ref-cat">2023 / NLP</span>
+                    </div>
                     <div class="project-content">
                         <h3>YouTube Video Summarizer</h3>
                         <p class="project-desc">Full-stack Streamlit app combining OpenAI Whisper for transcription and GPT-4 for semantic summarization of video content.</p>
@@ -151,7 +197,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2023 / Prototype</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;07</span>
+                        <span class="ref-cat">2023 / Prototype</span>
+                    </div>
                     <div class="project-content">
                         <h3>AskGPT</h3>
                         <p class="project-desc">Experimental voice-controlled personal assistant and precursor to Project Alfred. Initial exploration of GPT-4 integration, audio transcript handling, and persona-driven AI response cycles.</p>
@@ -162,7 +211,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">2023 / Foundational ML</div>
+                    <div class="project-meta">
+                        <span class="ref-id">ML&middot;08</span>
+                        <span class="ref-cat">2023 / Foundational ML</span>
+                    </div>
                     <div class="project-content">
                         <h3>Data Science 2023 Cluster</h3>
                         <p class="project-desc">A series of rigorous analytical projects including Yelp Rating Regression (170MB JSON), Twitter Virality Classification (KNN/Naive Bayes), and OKCupid Profile Analysis.</p>
@@ -178,12 +230,17 @@
         <!-- ERA 3: Sustainability & Corporate Systems -->
         <details class="era-block">
             <summary>
-                <h2 class="section-label">Sustainability & Corporate Systems</h2>
+                <span class="sheet-index">03</span>
+                <h2 class="section-label">Sustainability &amp; Corporate Systems</h2>
+                <span class="chevron">&rsaquo;</span>
             </summary>
             <div class="project-list">
-                
+
                 <div class="project-item">
-                    <div class="project-meta">2025 / Corporate BI</div>
+                    <div class="project-meta">
+                        <span class="ref-id">SY&middot;01</span>
+                        <span class="ref-cat">2025 / Corporate BI</span>
+                    </div>
                     <div class="project-content">
                         <h3>Climate Data Hub <span class="status-pill">Active</span></h3>
                         <p class="project-desc">A centralized GHG emissions ledger and dashboard for SBT-aligned corporate reporting. Developed an end-to-end pipeline in Power BI Dataflows to process 0.5m rows of annual ERP data with 100% emission-factor coverage via complex temporal logic rules.</p>
@@ -194,7 +251,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">Corporate / Geospatial</div>
+                    <div class="project-meta">
+                        <span class="ref-id">SY&middot;02</span>
+                        <span class="ref-cat">Corporate / Geospatial</span>
+                    </div>
                     <div class="project-content">
                         <h3>Commute GHG Emissions Analysis</h3>
                         <p class="project-desc">Quantified Scope 3.7 emissions for 30k+ employees by querying the Bing Maps API for commute distances and applying national statistical emission factors.</p>
@@ -205,7 +265,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">BI / Data Analyst</div>
+                    <div class="project-meta">
+                        <span class="ref-id">SY&middot;03</span>
+                        <span class="ref-cat">BI / Data Analyst</span>
+                    </div>
                     <div class="project-content">
                         <h3>EPA Emissions Dashboard (Power BI)</h3>
                         <p class="project-desc">Comprehensive analysis of public EPA data (2010-2021) involving 500k+ rows. Consolidated multiple data sources using Python-based ingestion scripts.</p>
@@ -216,7 +279,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">Low-Code / Automation</div>
+                    <div class="project-meta">
+                        <span class="ref-id">SY&middot;04</span>
+                        <span class="ref-cat">Low-Code / Automation</span>
+                    </div>
                     <div class="project-content">
                         <h3>Queue Notification Systems</h3>
                         <p class="project-desc">Developed a "polite" IT support queue using Power Apps and MS Teams to improve stakeholder visibility and triage efficiency.</p>
@@ -232,12 +298,17 @@
         <!-- ERA 4: Strategic Leadership & Learning -->
         <details class="era-block">
             <summary>
-                <h2 class="section-label">Strategic Leadership & Learning</h2>
+                <span class="sheet-index">04</span>
+                <h2 class="section-label">Strategic Leadership &amp; Learning</h2>
+                <span class="chevron">&rsaquo;</span>
             </summary>
             <div class="project-list">
-                
+
                 <div class="project-item">
-                    <div class="project-meta">Leadership</div>
+                    <div class="project-meta">
+                        <span class="ref-id">LD&middot;01</span>
+                        <span class="ref-cat">Leadership</span>
+                    </div>
                     <div class="project-content">
                         <h3>Collaboration Open House</h3>
                         <p class="project-desc">Organized and led international service-knowledge conferences across Europe. Facilitated knowledge transfer between technical teams and thousands of global stakeholders.</p>
@@ -245,7 +316,10 @@
                 </div>
 
                 <div class="project-item">
-                    <div class="project-meta">Learning Design</div>
+                    <div class="project-meta">
+                        <span class="ref-id">LD&middot;02</span>
+                        <span class="ref-cat">Learning Design</span>
+                    </div>
                     <div class="project-content">
                         <h3>Interactive Business Upskilling</h3>
                         <p class="project-desc">Co-developed interactive training modules using Articulate 360 to upskill a business unit of 40k+ users in remote collaboration technologies.</p>
@@ -261,12 +335,17 @@
         <!-- ERA 5: Academic & Legacy -->
         <details class="era-block">
             <summary>
-                <h2 class="section-label">Academic & Legacy</h2>
+                <span class="sheet-index">05</span>
+                <h2 class="section-label">Academic &amp; Legacy</h2>
+                <span class="chevron">&rsaquo;</span>
             </summary>
             <div class="project-list">
-                
+
                 <div class="project-item">
-                    <div class="project-meta">2022 / Academic</div>
+                    <div class="project-meta">
+                        <span class="ref-id">AC&middot;01</span>
+                        <span class="ref-cat">2022 / Academic</span>
+                    </div>
                     <div class="project-content">
                         <h3>Habit Tracker CLI</h3>
                         <p class="project-desc">A lightweight Python-based command-line interface for personal habit tracking. Developed as a final project for University.</p>
@@ -281,33 +360,33 @@
 
         <!-- Skills Summary -->
         <section class="static-block">
-            <h2 class="section-label">Technical Skillsets</h2>
+            <h2 class="section-label">Technical skillsets</h2>
             <div class="skills-grid">
                 <div class="skill-cat">
-                    <h4>Artificial Intelligence</h4>
+                    <h4>Artificial intelligence</h4>
                     <ul>
                         <li>Gemini Multimodal Live API</li>
-                        <li>RAG & Vector Embeddings</li>
-                        <li>Whisper & LLM Integration</li>
-                        <li>Autonomous Agent Orchestration</li>
+                        <li>RAG &amp; vector embeddings</li>
+                        <li>Whisper &amp; LLM integration</li>
+                        <li>Autonomous agent orchestration</li>
                     </ul>
                 </div>
                 <div class="skill-cat">
-                    <h4>Data Science & ML</h4>
+                    <h4>Data science &amp; ML</h4>
                     <ul>
                         <li>Python (Pandas, Scikit-learn)</li>
-                        <li>XGBoost & MLOps Pipelines</li>
-                        <li>Geospatial & Emissions Analysis</li>
+                        <li>XGBoost &amp; MLOps pipelines</li>
+                        <li>Geospatial &amp; emissions analysis</li>
                         <li>SQL (PostgreSQL, SQLite3)</li>
                     </ul>
                 </div>
                 <div class="skill-cat">
-                    <h4>Data Analysis & Viz</h4>
+                    <h4>Data analysis &amp; viz</h4>
                     <ul>
-                        <li>Power BI (Advanced DAX)</li>
+                        <li>Power BI (advanced DAX)</li>
                         <li>Power Platform (Apps/Automate)</li>
-                        <li>Google Sheets Automation</li>
-                        <li>GHG Protocol & Reporting</li>
+                        <li>Google Sheets automation</li>
+                        <li>GHG Protocol &amp; reporting</li>
                     </ul>
                 </div>
             </div>
@@ -315,46 +394,46 @@
 
         <!-- Certifications -->
         <section class="static-block">
-            <h2 class="section-label">Certifications & Badges</h2>
+            <h2 class="section-label">Certifications &amp; badges</h2>
             <div class="cert-track">
-                <div class="cert-item" 
-                     data-title="Machine Learning Specialization" 
+                <div class="cert-item" tabindex="0"
+                     data-title="Machine Learning Specialization"
                      data-org="DeepLearning.AI / Stanford"
                      data-val="Comprehensive 3-course series covering the foundations of modern AI. Demonstrates mastery of supervised and unsupervised learning, and best practices for building real-world ML systems.">
                     <img src="images/badges/ML_specialization.png" alt="ML Specialization">
                 </div>
-                <div class="cert-item" 
-                     data-title="Advanced Learning Algorithms" 
+                <div class="cert-item" tabindex="0"
+                     data-title="Advanced Learning Algorithms"
                      data-org="DeepLearning.AI"
                      data-val="In-depth focus on Neural Networks, Decision Trees, and Multi-class Classification. Validates the ability to build and tune complex models for non-linear data patterns.">
                     <img src="images/badges/Advanced_learning_algorithms.png" alt="Advanced Learning Algorithms">
                 </div>
-                <div class="cert-item" 
-                     data-title="Unsupervised Learning, Recommenders, Reinforcement Learning" 
+                <div class="cert-item" tabindex="0"
+                     data-title="Unsupervised Learning, Recommenders, Reinforcement Learning"
                      data-org="DeepLearning.AI"
                      data-val="Covers clustering (K-means), anomaly detection, and building recommender systems. Essential for personalized user experiences and pattern discovery in unlabeled data.">
                     <img src="images/badges/Unsupervised_learning.png" alt="Unsupervised Learning">
                 </div>
-                <div class="cert-item" 
-                     data-title="Supervised Machine Learning" 
+                <div class="cert-item" tabindex="0"
+                     data-title="Supervised Machine Learning"
                      data-org="DeepLearning.AI"
                      data-val="Foundational mastery of Linear and Logistic Regression. Provides the mathematical rigour required to understand how models learn and how to evaluate their performance accurately.">
                     <img src="images/badges/Coursera_Supervised_Machine_Learning.png" alt="Supervised Machine Learning">
                 </div>
-                <div class="cert-item" 
-                     data-title="Microsoft AI Skills Challenge" 
+                <div class="cert-item" tabindex="0"
+                     data-title="Microsoft AI Skills Challenge"
                      data-org="Microsoft"
                      data-val="Validation of proficiency in Azure AI services, including Azure OpenAI, Cognitive Search, and Form Recognizer. Focuses on deploying production-ready AI solutions.">
                     <img src="images/badges/AI Skills Challenge - badge - EN-US.png" alt="AI Skills Challenge">
                 </div>
-                <div class="cert-item" 
-                     data-title="Power BI Data Analyst Associate" 
+                <div class="cert-item" tabindex="0"
+                     data-title="Power BI Data Analyst Associate"
                      data-org="Microsoft"
                      data-val="Expertise in data modeling, DAX, and advanced visualization. Proven ability to transform fragmented business data into actionable strategic insights at scale.">
                     <img src="images/badges/PowerBI.png" alt="Power BI Advanced">
                 </div>
-                <div class="cert-item" 
-                     data-title="Build a Machine Learning Model with Python" 
+                <div class="cert-item" tabindex="0"
+                     data-title="Build a Machine Learning Model with Python"
                      data-org="Codecademy"
                      data-val="Practical implementation of ML lifecycles. Demonstrates hands-on ability to clean data, engineer features, and deploy models using the Scikit-learn ecosystem.">
                     <img src="images/badges/Codecademy_Build_MLModel_Python.png" alt="Codecademy: Build ML Model Python">
@@ -365,26 +444,26 @@
     </main>
 
     <footer class="container">
+        <p class="copyright">&copy; 2026 Jonathan Woodley. Built with Ostinato Rigore.</p>
         <div class="footer-links">
             <a href="https://github.com/woodleyj" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://www.linkedin.com/in/jonathanwoodley" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="mailto:contact@woodleyj.io"><i class="fas fa-envelope"></i> Contact</a>
         </div>
-        <p class="copyright">&copy; 2026 Jonathan Woodley. Built with Ostinato Rigore.</p>
     </footer>
 
     <!-- Certification Modal Components -->
     <div class="cert-blur-overlay" id="certBlurOverlay"></div>
-    <div class="cert-modal" id="certModal">
+    <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-content">
             <div class="modal-left">
-                <img src="" alt="Expanded Certificate" id="modalImg">
+                <img src="" alt="" id="modalImg">
             </div>
             <div class="modal-right">
                 <h3 id="modalTitle">Certificate Title</h3>
                 <p id="modalOrg" class="modal-subtitle">Organization Name</p>
                 <div class="modal-divider"></div>
-                <p class="modal-label">Value Proposition</p>
+                <p class="modal-label">Why it matters</p>
                 <p id="modalVal" class="modal-desc">This is why this certification matters for a recruiter.</p>
                 <button class="modal-close-btn" id="modalCloseBtn">Close</button>
             </div>
@@ -400,23 +479,33 @@
         const modalVal = document.getElementById('modalVal');
         const blurOverlay = document.getElementById('certBlurOverlay');
         const closeBtn = document.getElementById('modalCloseBtn');
+        let lastFocused = null;
+
+        function openCert(item) {
+            const img = item.querySelector('img');
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            modalTitle.textContent = item.dataset.title;
+            modalOrg.textContent = item.dataset.org;
+            modalVal.textContent = item.dataset.val;
+
+            lastFocused = document.activeElement;
+            modal.classList.add('active');
+            blurOverlay.classList.add('active');
+            document.body.classList.add('cert-open');
+            closeBtn.focus();
+        }
 
         certItems.forEach(item => {
             item.addEventListener('click', (e) => {
-                const img = item.querySelector('img');
-                
-                // Populate data
-                modalImg.src = img.src;
-                modalTitle.textContent = item.dataset.title;
-                modalOrg.textContent = item.dataset.org;
-                modalVal.textContent = item.dataset.val;
-                
-                // Show modal
-                modal.classList.add('active');
-                blurOverlay.classList.add('active');
-                document.body.classList.add('cert-open');
-                
+                openCert(item);
                 e.stopPropagation();
+            });
+            item.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openCert(item);
+                }
             });
         });
 
@@ -424,6 +513,7 @@
             modal.classList.remove('active');
             blurOverlay.classList.remove('active');
             document.body.classList.remove('cert-open');
+            if (lastFocused) lastFocused.focus();
         };
 
         blurOverlay.addEventListener('click', closeAll);
