@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate Data Hub · Jonathan Woodley</title>
+<meta name="description" content="A central GHG emissions ledger for science-based-target reporting, built on Power BI Dataflows over half a million rows of ERP data a year.">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preload" href="/assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSerif4-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/pi.css">
+<meta property="og:title" content="Climate Data Hub">
+<meta property="og:description" content="A central GHG emissions ledger for science-based-target reporting, built on Power BI Dataflows over half a million rows of ERP data a year.">
+<meta property="og:type" content="article">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<article>
+<header class="proj-head wrap">
+    <a class="back" href="/">Jonathan Woodley</a>
+    <h1>Climate Data Hub</h1>
+    <div class="proj-flags"><span class="proj-year">2025</span><span class="flag flag--active">Active</span></div>
+    <p class="standfirst">Corporate emissions reporting fails on coverage, not on arithmetic. This is the ledger that got a year of ERP spend to a complete set of emission factors.</p>
+    
+</header>
+
+<div class="proj-body wrap" id="main">
+
+    <h2>What the reporting actually needs</h2>
+     <p>A science-based target commits an organisation to a number it has to defend. The hard
+     part isn't the calculation. It's that every line of spend has to map to an emission
+     factor, the factor that applied <em>at the time</em>, and any line that doesn't map is a
+     hole in the disclosure.</p>
+     <p>The Climate Data Hub is the central ledger and dashboard that closes those holes:
+     around half a million rows of annual ERP data, processed end to end into a model that
+     reporting and assurance both work from.</p>
+
+    <h2>Getting to full coverage</h2>
+     <p>The dataset reaches 100% emission-factor coverage through a set of temporal logic
+     rules instead of hand-mapping the long tail. Factors are time-dependent: a category's
+     factor changes between reporting years, so the rules select the one in force for each
+     transaction's date rather than the current one. Get that wrong and prior years get
+     quietly restated. Power BI Dataflows carry the transformation, keeping the logic in one
+     governed place instead of duplicated across report files, and ERP integration supplies
+     the procurement spend the model is built on.</p>
+
+    <h2>Why it is a ledger</h2>
+     <p>Framing it as a ledger rather than a dashboard is deliberate. Assurance asks how a
+     figure was arrived at, and a number you cannot trace back to the transactions behind it is
+     not defensible. The model keeps the line-level detail underneath the aggregate.</p>
+
+    <div class="spec"><dl><dt>Role</dt><dd>Data pipeline and model design</dd><dt>Status</dt><dd>In production, ongoing</dd><dt>Scale</dt><dd>~0.5M rows of ERP data annually</dd><dt>Coverage</dt><dd>100% emission-factor mapping</dd><dt>Stack</dt><dd>Power BI Dataflows, DAX, ERP integration, GHG Protocol</dd></dl></div>
+</div>
+</article>
+
+<footer class="foot wrap">
+    <p>&copy; 2026 Jonathan Woodley</p>
+    <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="https://github.com/woodleyj" rel="me noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/jonathanwoodley" rel="me noopener">LinkedIn</a>
+        <a href="mailto:contact@woodleyj.io">Email</a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AQI Forecasting · Jonathan Woodley</title>
+<meta name="description" content="Ozone and pollutant forecasting built as a reproducible ML lifecycle rather than a notebook: Cookiecutter Data Science, XGBoost, tuned with GridSearchCV.">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preload" href="/assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSerif4-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/pi.css">
+<meta property="og:title" content="AQI Forecasting">
+<meta property="og:description" content="Ozone and pollutant forecasting built as a reproducible ML lifecycle rather than a notebook: Cookiecutter Data Science, XGBoost, tuned with GridSearchCV.">
+<meta property="og:type" content="article">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<article>
+<header class="proj-head wrap">
+    <a class="back" href="/">Jonathan Woodley</a>
+    <h1>AQI Forecasting</h1>
+    <div class="proj-flags"><span class="proj-year">2024</span></div>
+    <p class="standfirst">A forecasting model is easy. A forecasting model somebody else can rebuild six months later and get the same numbers from: that's the actual work.</p>
+    <div class="proj-actions"><a class="btn btn--secondary" href="https://github.com/woodleyj">GitHub profile</a></div>
+</header>
+
+<div class="proj-body wrap" id="main">
+
+    <h2>Built as a project, not a notebook</h2>
+     <p>This one exists as much for its structure as its results. It follows the Cookiecutter
+     Data Science layout: raw data separated from interim and processed, feature engineering
+     separated from modelling, the whole thing runnable end to end. The path from source data
+     to reported metric is a sequence of steps, not a scroll position in someone's notebook.</p>
+
+    <h2>The modelling</h2>
+     <p>XGBoost handles the forecast, chosen for tabular data with the mix of seasonal and
+     meteorological drivers that pollutant levels have. GridSearchCV tunes the
+     hyperparameters, so the final configuration comes from a defined search rather than
+     whatever happened to look good, and StandardScaler sits inside the pipeline itself, so
+     the scaling is learned on training data alone.</p>
+
+    <h2>A recurring subject</h2>
+     <p>Air quality, weather and emissions keep showing up across this portfolio, and the
+     reason is the same each time: the readings are public, physical and messy, which makes
+     them a much better test of a pipeline than a clean benchmark set.</p>
+
+    <div class="spec"><dl><dt>Role</dt><dd>Sole developer</dd><dt>Target</dt><dd>Ozone and pollutant levels</dd><dt>Stack</dt><dd>XGBoost, scikit-learn, Cookiecutter Data Science</dd></dl></div>
+</div>
+</article>
+
+<footer class="foot wrap">
+    <p>&copy; 2026 Jonathan Woodley</p>
+    <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="https://github.com/woodleyj" rel="me noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/jonathanwoodley" rel="me noopener">LinkedIn</a>
+        <a href="mailto:contact@woodleyj.io">Email</a>
+    </div>
+</footer>
+
+</body>
+</html>

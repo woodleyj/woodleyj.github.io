@@ -1,1 +1,1 @@
-A Simple Portfolio Page - go to woodleyj.github.io
+A Portfolio Page - jonathanwoodley.com

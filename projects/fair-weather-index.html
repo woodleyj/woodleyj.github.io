@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fair Weather Index · Jonathan Woodley</title>
+<meta name="description" content="An interactive dot-matrix globe scoring three years of station observations against your own definition of a good day.">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preload" href="/assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSerif4-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/pi.css">
+<meta property="og:title" content="Fair Weather Index">
+<meta property="og:description" content="An interactive dot-matrix globe scoring three years of station observations against your own definition of a good day.">
+<meta property="og:type" content="article">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<article>
+<header class="proj-head wrap">
+    <a class="back" href="/">Jonathan Woodley</a>
+    <h1>Fair Weather Index</h1>
+    <div class="proj-flags"><span class="proj-year">2026</span><span class="flag flag--live">Live</span></div>
+    <p class="standfirst">Everyone has a different idea of a good day. This one asks you for yours, then replays three years of real observations against it and tells you where on Earth it happens most.</p>
+    <div class="proj-actions"><a class="btn btn--primary" href="https://weather.jonathanwoodley.com">Open the app</a><a class="btn btn--secondary" href="https://github.com/woodleyj/fair-weather-index">Source on GitHub</a></div>
+</header>
+
+<div class="proj-body wrap" id="main">
+
+    <h2>The problem with a climate average</h2>
+     <p>"Best weather" rankings almost always answer a question nobody asked: they average a
+     year into one number, then rank places on it. That buries the thing people actually care
+     about: how often is it genuinely pleasant, by <em>my</em> standard, and when in the year
+     does that happen?</p>
+     <p>Fair Weather Index inverts it. You set the terms: temperature or feels-like, dew
+     point, humidity, wind, gusts, rain, cloud cover, visibility. Every station-day in the
+     archive is scored pass or fail against those terms, and the map paints the share of days
+     that cleared them.</p>
+
+    <h2>What you are looking at</h2>
+     <p>The world lattice is 40,586 land dots at roughly 60&nbsp;km spacing, held in longitude
+     and latitude and projected fresh every frame. A row at latitude φ gets 360·cos(φ)/s
+     columns, so every cell covers the same patch of ground wherever it sits. That equal-area
+     property is what the whole app rests on. Without it, high-latitude countries would
+     silently count for more, simply by being drawn larger.</p>
+     <p>Both world views preserve it. The globe is orthographic; the flat map is Equal Earth.
+     Switching between them does not move the standings, because a dot means the same amount
+     of ground either way.</p>
+    <div class="figure-pair"><figure class="figure"><img src="/images/apps/fwi-globe.png" alt="The dot-matrix globe turned to Europe, showing fair-weather scores in green and teal across the United States and Europe, with the rest of the world in grey." width="620" height="620" loading="lazy"><figcaption>The same terms, the whole period.</figcaption></figure><figure class="figure"><img src="/images/apps/fwi-heat.png" alt="The same globe with a different set of terms applied, producing a markedly different colour distribution." width="620" height="620" loading="lazy"><figcaption>Change the terms and the map changes with them.</figcaption></figure></div>
+
+    <h2>Grey means no data, not bad weather</h2>
+     <p>The archive covers the United States and Europe. Everywhere else is drawn grey: it is
+     land, it is not weather. The border between a coloured United States and a grey Mexico is
+     where the dataset stops, not where the climate changes.</p>
+     <p>This is the decision the project is most opinionated about. Interpolating a colour
+     across Africa from an airfield a thousand miles away would have produced a prettier map
+     and a dishonest one.</p>
+
+    <h2>Under the hood</h2>
+     <p>2,281 stations were harvested and thinned to 961: the keeper in each cell of about
+     55 miles, chosen on an even geographic spread. The cell is sized in ground distance rather
+     than degrees, since a degree of longitude is half as wide in Norway as in Spain, and a
+     fixed-degree cell would have weighted Scandinavia double. Each reading is quantised to one
+     byte in <code>obs.bin</code>, laid out day-major so a single day's frame is one contiguous
+     read; 255 always means "not reported".</p>
+     <p>Dot positions come from precomputed sines and cosines, so spinning the globe costs a
+     few multiplies per dot instead of four transcendental calls, and far-side dots are dropped
+     on the sign of their cosine before anything else touches them. A separate preview script
+     reuses the app's own geometry, ramps and scoring to rasterise the map to PNG without a
+     browser, which is how an upside-down projection got caught in the first place.</p>
+    <figure class="figure"><img src="/images/apps/fwi-state.png" alt="A close-up of a single US state on its own lattice, resolving mountain terrain against plains." width="760" height="444" loading="lazy"><figcaption>A close-up interpolates the same stations more finely. The Colorado Rockies show up plainly, but the close-up adds no information the stations don't have.</figcaption></figure>
+
+    <h2>Going in close</h2>
+     <p>Click a country and the map rebuilds on a lattice for that country alone, using
+     Lambert azimuthal equal-area centred on it, which works anywhere a conic tuned to one
+     country does not. In the United States, where the source has subdivisions, one more
+     click opens a state, and below that a click selects a single airfield.</p>
+
+    <h2>What it will not tell you</h2>
+     <p>Being straight about the limits is part of the design, and the app says so on its own
+     pages:</p>
+     <ul>
+       <li>The dot field is interpolated from station points, not modelled. One dot is not a
+       forecast for that spot; the tooltip names the station behind it and how far away it is.</li>
+       <li>Feels-like is derived: heat index or wind chill computed from the daily summary,
+       because the source carries no observed apparent temperature.</li>
+       <li>No snow and no UV. The observations endpoint reports neither.</li>
+       <li>European rainfall depth is estimated, learned from US rainfall. The dry/wet split is
+       sound; the millimetres are a climatological expectation.</li>
+       <li>Europe is harvested to about three fifths of its grid: the run stopped on a monthly
+       token budget. Centres are worked in scattered order precisely so that stopping early
+       costs a little density everywhere rather than an entire region.</li>
+     </ul>
+    <figure class="figure"><img src="/images/apps/fwi-timeline.png" alt="A two-ink timeline trace for a single reporting station across the year." width="760" height="499" loading="lazy"><figcaption>The standings ring reads the year as 365 spokes, answering when a place is fair: something the map alone can't show.</figcaption></figure>
+
+    <div class="spec"><dl><dt>Role</dt><dd>Design, data pipeline, and front end</dd><dt>Data</dt><dd>Xweather daily station summaries</dd><dt>Period</dt><dd>Aug 2023 – Jul 2026, 1,089 days</dd><dt>Stations</dt><dd>961 after thinning, across 32 countries</dd><dt>Stack</dt><dd>Vanilla JavaScript, Canvas, Node build pipeline</dd><dt>Hosting</dt><dd>Caddy behind a Cloudflare Tunnel</dd></dl></div>
+</div>
+</article>
+
+<footer class="foot wrap">
+    <p>&copy; 2026 Jonathan Woodley</p>
+    <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="https://github.com/woodleyj" rel="me noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/jonathanwoodley" rel="me noopener">LinkedIn</a>
+        <a href="mailto:contact@woodleyj.io">Email</a>
+    </div>
+</footer>
+
+</body>
+</html>

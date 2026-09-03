@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESP32-UI · Jonathan Woodley</title>
+<meta name="description" content="A smart-home control panel for the Waveshare ESP32-S3-Touch whose interface is rebuilt at runtime from MQTT, with no reflashing.">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preload" href="/assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSerif4-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/pi.css">
+<meta property="og:title" content="ESP32-UI">
+<meta property="og:description" content="A smart-home control panel for the Waveshare ESP32-S3-Touch whose interface is rebuilt at runtime from MQTT, with no reflashing.">
+<meta property="og:type" content="article">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<article>
+<header class="proj-head wrap">
+    <a class="back" href="/">Jonathan Woodley</a>
+    <h1>ESP32-UI</h1>
+    <div class="proj-flags"><span class="proj-year">2026</span><span class="flag flag--active">Active</span></div>
+    <p class="standfirst">A wall panel whose screen layout is data, not firmware. Change what the house exposes over MQTT and the interface rebuilds itself: no cable, no reflash.</p>
+    <div class="proj-actions"><a class="btn btn--secondary" href="https://github.com/woodleyj">GitHub profile</a></div>
+</header>
+
+<div class="proj-body wrap" id="main">
+
+    <h2>Why the UI is data</h2>
+     <p>The usual way to build an embedded control panel is to lay the screen out in code and
+     flash it. That works until the house changes: a new device, a room renamed, a control that
+     should have been on the first page. Each of those becomes a firmware release and a walk to
+     the wall with a cable.</p>
+     <p>ESP32-UI treats the interface as something the board receives. Screen definitions
+     arrive over MQTT and the panel rebuilds its LVGL widget tree at runtime, so what the panel
+     shows is a property of the house, not of the binary running on it.</p>
+
+    <h2>Working within the hardware</h2>
+     <p>The board is a Waveshare ESP32-S3-Touch, a capacitive touch panel with enough headroom
+     for LVGL and not much more, so rebuilding a widget tree on the fly means watching
+     fragmentation carefully on a device with no virtual memory. It resolves where it is by IP
+     geolocation, with geocoding as a fallback, so it's useful the moment it joins a network
+     rather than after a setup step, and the display responds to real-time conditions instead
+     of showing one fixed theme.</p>
+
+    <h2>How it connects to the rest</h2>
+     <p>The panel is also one of the bridges into
+     <a href="/projects/project-alfred">Project Alfred</a>, which is where the "interface as
+     data" idea earns its keep: the assistant can change what the wall shows without anything
+     being rebuilt.</p>
+
+    <div class="spec"><dl><dt>Role</dt><dd>Sole developer</dd><dt>Status</dt><dd>In active development</dd><dt>Hardware</dt><dd>Waveshare ESP32-S3-Touch</dd><dt>Stack</dt><dd>C++, LVGL, MQTT</dd></dl></div>
+</div>
+</article>
+
+<footer class="foot wrap">
+    <p>&copy; 2026 Jonathan Woodley</p>
+    <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="https://github.com/woodleyj" rel="me noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/jonathanwoodley" rel="me noopener">LinkedIn</a>
+        <a href="mailto:contact@woodleyj.io">Email</a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,527 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Woodley · Portfolio</title>
-    <meta name="description" content="Jonathan Woodley builds automation that sits between sensors, models, and the systems they run — agents, embedded interfaces, and emissions pipelines.">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/blueprint.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonathan Woodley</title>
+<meta name="description" content="Jonathan Woodley builds automation between sensors, models, and the systems that act on what they find: AI agents, embedded interfaces, and corporate emissions pipelines.">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preload" href="/assets/fonts/SourceSerif4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/SourceSerif4-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/pi.css">
+<meta property="og:title" content="Jonathan Woodley">
+<meta property="og:description" content="What I'm working on, and what I've built.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jonathanwoodley.com/">
 </head>
 <body>
 
-    <header class="container hero">
-        <div class="hero-grid">
-            <div>
-                <div class="identity-lockup">
-                    <img src="images/profile.PNG" alt="Jonathan Woodley" class="profile-img">
-                    <h1 class="hero-title">Jonathan Woodley</h1>
-                </div>
-                <p class="hero-lede">Builds the automation between sensors, models, and the systems they run.</p>
-                <p class="hero-sub">Agents, embedded interfaces, and emissions pipelines — Python most days, a soldering iron on the rest.</p>
-            </div>
+<a class="skip" href="#main">Skip to content</a>
 
-            <aside class="status-panel">
-                <h2>Currently building</h2>
-                <ul>
-                    <li><span class="status-dot"></span><span class="proj-name">Project Alfred</span><span class="proj-cat">Agentic</span></li>
-                    <li><span class="status-dot"></span><span class="proj-name">ESP32-UI</span><span class="proj-cat">Hardware</span></li>
-                    <li><span class="status-dot"></span><span class="proj-name">Climate Data Hub</span><span class="proj-cat">Corporate BI</span></li>
-                </ul>
-            </aside>
-        </div>
-    </header>
-
-    <main class="container">
-
-        <!-- ERA 1: AI Agents & Personal Assistants (2025-2026) -->
-        <details class="era-block" open>
-            <summary>
-                <span class="sheet-index">01</span>
-                <h2 class="section-label">Agentic Systems &amp; AI</h2>
-                <span class="chevron">&rsaquo;</span>
-            </summary>
-            <div class="project-list">
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">AI&middot;01</span>
-                        <span class="ref-cat">2026 / Agentic</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Alfred <span class="status-pill">Active</span></h3>
-                        <p class="project-desc">A sophisticated multi-bridge personal assistant (Discord, ESP32, Gemini Live API). Features a custom "Soul" architecture, 4-tier memory compression system, and deep Home Assistant integration for proactive estate management.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span><span class="tag">Gemini Multimodal Live</span><span class="tag">RAG</span><span class="tag">Home Assistant</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">AI&middot;02</span>
-                        <span class="ref-cat">2026 / Hardware</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>ESP32-UI <span class="status-pill">Active</span></h3>
-                        <p class="project-desc">A data-driven smart home control panel built for the Waveshare ESP32-S3-Touch. Features dynamic UI rebuilding via MQTT, hybrid IP/Geocoding location services, and real-time environment-adaptive visuals.</p>
-                        <div class="tech-tags">
-                            <span class="tag">C++</span><span class="tag">LVGL</span><span class="tag">MQTT</span><span class="tag">ESP32-S3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">AI&middot;03</span>
-                        <span class="ref-cat">2026 / Utility</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>TASS (Terminal Assistant)</h3>
-                        <p class="project-desc">A lightweight CLI AI assistant that translates natural language to precise shell commands with OS awareness (PowerShell/Bash) and automated model fallback logic.</p>
-                        <div class="tech-tags">
-                            <span class="tag">CLI</span><span class="tag">Gemini API</span><span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">AI&middot;04</span>
-                        <span class="ref-cat">2026 / Fintech</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Polymarket Interactive CLI</h3>
-                        <p class="project-desc">Real-time terminal dashboard for prediction markets. Interacts with the Gamma and CLOB APIs for market exploration and order book execution.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Rich</span><span class="tag">Py_clob_client</span><span class="tag">API Integration</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </details>
-
-        <!-- ERA 2: Machine Learning & Data Engineering (2023-2025) -->
-        <details class="era-block">
-            <summary>
-                <span class="sheet-index">02</span>
-                <h2 class="section-label">Machine Learning &amp; Data Engineering</h2>
-                <span class="chevron">&rsaquo;</span>
-            </summary>
-            <div class="project-list">
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;01</span>
-                        <span class="ref-cat">2025 / Visualization</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Comfort Zones</h3>
-                        <p class="project-desc">Generating heatmaps of "comfortable days" across Europe using 10 years of historical weather data from the Meteostat API. A focus on clean data pipelines and visualization.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Meteostat API</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;02</span>
-                        <span class="ref-cat">2024 / Automation</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>flipper</h3>
-                        <p class="project-desc">A robust web scraping and data extraction utility with a Streamlit interface. Automates the gathering of dynamic web content using Selenium and BeautifulSoup.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Selenium</span><span class="tag">Web Scraping</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;03</span>
-                        <span class="ref-cat">2024 / MLOps</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>AQI Forecasting</h3>
-                        <p class="project-desc">A professional ML lifecycle implementation using Cookiecutter Data Science. Forecasts ozone and pollutant levels using XGBoost with hyperparameter tuning via GridSearchCV.</p>
-                        <div class="tech-tags">
-                            <span class="tag">XGBoost</span><span class="tag">MLOps</span><span class="tag">StandardScaler</span><span class="tag">GridSearchCV</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;04</span>
-                        <span class="ref-cat">2023 / Financial Automation</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>TradeTracker</h3>
-                        <p class="project-desc">Automated system to consolidate TDAmeritrade trade executions into a Google Sheets dashboard. Handled complex multi-leg options strategy grouping.</p>
-                        <div class="tech-tags">
-                            <span class="tag">TDAmeritrade API</span><span class="tag">OAuth2</span><span class="tag">Google Sheets API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;05</span>
-                        <span class="ref-cat">2023 / NLP</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>QueryASR</h3>
-                        <p class="project-desc">A RAG-based semantic search engine for massive corporate sustainability reports. Transforms static PDFs into interactive knowledge bases using vector embeddings and Llama-index.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Llama-index</span><span class="tag">Vector Embeddings</span><span class="tag">RAG</span><span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;06</span>
-                        <span class="ref-cat">2023 / NLP</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>YouTube Video Summarizer</h3>
-                        <p class="project-desc">Full-stack Streamlit app combining OpenAI Whisper for transcription and GPT-4 for semantic summarization of video content.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Streamlit</span><span class="tag">Whisper</span><span class="tag">OpenAI API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;07</span>
-                        <span class="ref-cat">2023 / Prototype</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>AskGPT</h3>
-                        <p class="project-desc">Experimental voice-controlled personal assistant and precursor to Project Alfred. Initial exploration of GPT-4 integration, audio transcript handling, and persona-driven AI response cycles.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span><span class="tag">OpenAI API</span><span class="tag">Whisper</span><span class="tag">Voice AI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">ML&middot;08</span>
-                        <span class="ref-cat">2023 / Foundational ML</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Data Science 2023 Cluster</h3>
-                        <p class="project-desc">A series of rigorous analytical projects including Yelp Rating Regression (170MB JSON), Twitter Virality Classification (KNN/Naive Bayes), and OKCupid Profile Analysis.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Scikit-learn</span><span class="tag">Regression</span><span class="tag">Classification</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </details>
-
-        <!-- ERA 3: Sustainability & Corporate Systems -->
-        <details class="era-block">
-            <summary>
-                <span class="sheet-index">03</span>
-                <h2 class="section-label">Sustainability &amp; Corporate Systems</h2>
-                <span class="chevron">&rsaquo;</span>
-            </summary>
-            <div class="project-list">
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">SY&middot;01</span>
-                        <span class="ref-cat">2025 / Corporate BI</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Climate Data Hub <span class="status-pill">Active</span></h3>
-                        <p class="project-desc">A centralized GHG emissions ledger and dashboard for SBT-aligned corporate reporting. Developed an end-to-end pipeline in Power BI Dataflows to process 0.5m rows of annual ERP data with 100% emission-factor coverage via complex temporal logic rules.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Power BI Dataflows</span><span class="tag">DAX</span><span class="tag">ERP Integration (Sievo)</span><span class="tag">GHG Protocol</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">SY&middot;02</span>
-                        <span class="ref-cat">Corporate / Geospatial</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Commute GHG Emissions Analysis</h3>
-                        <p class="project-desc">Quantified Scope 3.7 emissions for 30k+ employees by querying the Bing Maps API for commute distances and applying national statistical emission factors.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Bing Maps API</span><span class="tag">Sustainability Reporting</span><span class="tag">GHG Protocol</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">SY&middot;03</span>
-                        <span class="ref-cat">BI / Data Analyst</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>EPA Emissions Dashboard (Power BI)</h3>
-                        <p class="project-desc">Comprehensive analysis of public EPA data (2010-2021) involving 500k+ rows. Consolidated multiple data sources using Python-based ingestion scripts.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">SY&middot;04</span>
-                        <span class="ref-cat">Low-Code / Automation</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Queue Notification Systems</h3>
-                        <p class="project-desc">Developed a "polite" IT support queue using Power Apps and MS Teams to improve stakeholder visibility and triage efficiency.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Power Platform</span><span class="tag">MS Teams</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </details>
-
-        <!-- ERA 4: Strategic Leadership & Learning -->
-        <details class="era-block">
-            <summary>
-                <span class="sheet-index">04</span>
-                <h2 class="section-label">Strategic Leadership &amp; Learning</h2>
-                <span class="chevron">&rsaquo;</span>
-            </summary>
-            <div class="project-list">
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">LD&middot;01</span>
-                        <span class="ref-cat">Leadership</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Collaboration Open House</h3>
-                        <p class="project-desc">Organized and led international service-knowledge conferences across Europe. Facilitated knowledge transfer between technical teams and thousands of global stakeholders.</p>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">LD&middot;02</span>
-                        <span class="ref-cat">Learning Design</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Interactive Business Upskilling</h3>
-                        <p class="project-desc">Co-developed interactive training modules using Articulate 360 to upskill a business unit of 40k+ users in remote collaboration technologies.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Articulate 360</span><span class="tag">Instructional Design</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </details>
-
-        <!-- ERA 5: Academic & Legacy -->
-        <details class="era-block">
-            <summary>
-                <span class="sheet-index">05</span>
-                <h2 class="section-label">Academic &amp; Legacy</h2>
-                <span class="chevron">&rsaquo;</span>
-            </summary>
-            <div class="project-list">
-
-                <div class="project-item">
-                    <div class="project-meta">
-                        <span class="ref-id">AC&middot;01</span>
-                        <span class="ref-cat">2022 / Academic</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Habit Tracker CLI</h3>
-                        <p class="project-desc">A lightweight Python-based command-line interface for personal habit tracking. Developed as a final project for University.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span><span class="tag">SQLite3</span><span class="tag">CLI</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </details>
-
-        <!-- Skills Summary -->
-        <section class="static-block">
-            <h2 class="section-label">Technical skillsets</h2>
-            <div class="skills-grid">
-                <div class="skill-cat">
-                    <h4>Artificial intelligence</h4>
-                    <ul>
-                        <li>Gemini Multimodal Live API</li>
-                        <li>RAG &amp; vector embeddings</li>
-                        <li>Whisper &amp; LLM integration</li>
-                        <li>Autonomous agent orchestration</li>
-                    </ul>
-                </div>
-                <div class="skill-cat">
-                    <h4>Data science &amp; ML</h4>
-                    <ul>
-                        <li>Python (Pandas, Scikit-learn)</li>
-                        <li>XGBoost &amp; MLOps pipelines</li>
-                        <li>Geospatial &amp; emissions analysis</li>
-                        <li>SQL (PostgreSQL, SQLite3)</li>
-                    </ul>
-                </div>
-                <div class="skill-cat">
-                    <h4>Data analysis &amp; viz</h4>
-                    <ul>
-                        <li>Power BI (advanced DAX)</li>
-                        <li>Power Platform (Apps/Automate)</li>
-                        <li>Google Sheets automation</li>
-                        <li>GHG Protocol &amp; reporting</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications -->
-        <section class="static-block">
-            <h2 class="section-label">Certifications &amp; badges</h2>
-            <div class="cert-track">
-                <div class="cert-item" tabindex="0"
-                     data-title="Machine Learning Specialization"
-                     data-org="DeepLearning.AI / Stanford"
-                     data-val="Comprehensive 3-course series covering the foundations of modern AI. Demonstrates mastery of supervised and unsupervised learning, and best practices for building real-world ML systems.">
-                    <img src="images/badges/ML_specialization.png" alt="ML Specialization">
-                </div>
-                <div class="cert-item" tabindex="0"
-                     data-title="Advanced Learning Algorithms"
-                     data-org="DeepLearning.AI"
-                     data-val="In-depth focus on Neural Networks, Decision Trees, and Multi-class Classification. Validates the ability to build and tune complex models for non-linear data patterns.">
-                    <img src="images/badges/Advanced_learning_algorithms.png" alt="Advanced Learning Algorithms">
-                </div>
-                <div class="cert-item" tabindex="0"
-                     data-title="Unsupervised Learning, Recommenders, Reinforcement Learning"
-                     data-org="DeepLearning.AI"
-                     data-val="Covers clustering (K-means), anomaly detection, and building recommender systems. Essential for personalized user experiences and pattern discovery in unlabeled data.">
-                    <img src="images/badges/Unsupervised_learning.png" alt="Unsupervised Learning">
-                </div>
-                <div class="cert-item" tabindex="0"
-                     data-title="Supervised Machine Learning"
-                     data-org="DeepLearning.AI"
-                     data-val="Foundational mastery of Linear and Logistic Regression. Provides the mathematical rigour required to understand how models learn and how to evaluate their performance accurately.">
-                    <img src="images/badges/Coursera_Supervised_Machine_Learning.png" alt="Supervised Machine Learning">
-                </div>
-                <div class="cert-item" tabindex="0"
-                     data-title="Microsoft AI Skills Challenge"
-                     data-org="Microsoft"
-                     data-val="Validation of proficiency in Azure AI services, including Azure OpenAI, Cognitive Search, and Form Recognizer. Focuses on deploying production-ready AI solutions.">
-                    <img src="images/badges/AI Skills Challenge - badge - EN-US.png" alt="AI Skills Challenge">
-                </div>
-                <div class="cert-item" tabindex="0"
-                     data-title="Power BI Data Analyst Associate"
-                     data-org="Microsoft"
-                     data-val="Expertise in data modeling, DAX, and advanced visualization. Proven ability to transform fragmented business data into actionable strategic insights at scale.">
-                    <img src="images/badges/PowerBI.png" alt="Power BI Advanced">
-                </div>
-                <div class="cert-item" tabindex="0"
-                     data-title="Build a Machine Learning Model with Python"
-                     data-org="Codecademy"
-                     data-val="Practical implementation of ML lifecycles. Demonstrates hands-on ability to clean data, engineer features, and deploy models using the Scikit-learn ecosystem.">
-                    <img src="images/badges/Codecademy_Build_MLModel_Python.png" alt="Codecademy: Build ML Model Python">
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="container">
-        <p class="copyright">&copy; 2026 Jonathan Woodley. Built with Ostinato Rigore.</p>
-        <div class="footer-links">
-            <a href="https://github.com/woodleyj" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/jonathanwoodley" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:contact@woodleyj.io"><i class="fas fa-envelope"></i> Contact</a>
-        </div>
-    </footer>
-
-    <!-- Certification Modal Components -->
-    <div class="cert-blur-overlay" id="certBlurOverlay"></div>
-    <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <div class="modal-content">
-            <div class="modal-left">
-                <img src="" alt="" id="modalImg">
-            </div>
-            <div class="modal-right">
-                <h3 id="modalTitle">Certificate Title</h3>
-                <p id="modalOrg" class="modal-subtitle">Organization Name</p>
-                <div class="modal-divider"></div>
-                <p class="modal-label">Why it matters</p>
-                <p id="modalVal" class="modal-desc">This is why this certification matters for a recruiter.</p>
-                <button class="modal-close-btn" id="modalCloseBtn">Close</button>
-            </div>
+<header class="masthead wrap">
+    <div class="masthead-id">
+        <img src="/images/profile.png" alt="" width="56" height="56">
+        <div>
+            <div class="name">Jonathan Woodley</div>
+            <div class="where">Sustainability data &amp; automation</div>
         </div>
     </div>
 
-    <script>
-        const certItems = document.querySelectorAll('.cert-item');
-        const modal = document.getElementById('certModal');
-        const modalImg = document.getElementById('modalImg');
-        const modalTitle = document.getElementById('modalTitle');
-        const modalOrg = document.getElementById('modalOrg');
-        const modalVal = document.getElementById('modalVal');
-        const blurOverlay = document.getElementById('certBlurOverlay');
-        const closeBtn = document.getElementById('modalCloseBtn');
-        let lastFocused = null;
+    <h1>What I'm working on, and what I've built.</h1>
 
-        function openCert(item) {
-            const img = item.querySelector('img');
-            modalImg.src = img.src;
-            modalImg.alt = img.alt;
-            modalTitle.textContent = item.dataset.title;
-            modalOrg.textContent = item.dataset.org;
-            modalVal.textContent = item.dataset.val;
+    <p class="lede">AI agents, embedded interfaces, and corporate emissions pipelines, built to turn
+    physical-world readings into systems that act on them.</p>
 
-            lastFocused = document.activeElement;
-            modal.classList.add('active');
-            blurOverlay.classList.add('active');
-            document.body.classList.add('cert-open');
-            closeBtn.focus();
-        }
+    <div class="masthead-links">
+        <a class="btn btn--primary" href="#apps">See what's running</a>
+        <a class="btn btn--secondary" href="https://github.com/woodleyj" rel="me noopener">GitHub</a>
+        <a class="btn btn--secondary" href="https://www.linkedin.com/in/jonathanwoodley" rel="me noopener">LinkedIn</a>
+    </div>
+</header>
 
-        certItems.forEach(item => {
-            item.addEventListener('click', (e) => {
-                openCert(item);
-                e.stopPropagation();
-            });
-            item.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    openCert(item);
-                }
-            });
+<main id="main">
+
+<section class="apps on-dark" id="apps">
+    <div class="wrap">
+        <h2>Live apps</h2>
+        <p class="apps-note">Deployed and running on this server. Click through and use them.</p>
+
+        <article class="app">
+            <div>
+                <h3>Fair Weather Index</h3>
+                <p>Define what fair weather means to you: temperature, dew point, humidity, wind,
+                rain, cloud cover, visibility. Then watch three years of real observations
+                repaint the world day by day. The standings rank the best cities, countries and
+                regions for <em>your</em> definition, not someone else's.</p>
+                <div class="app-actions">
+                    <a class="btn btn--primary" href="https://weather.jonathanwoodley.com">Open the app</a>
+                    <a class="btn btn--secondary" href="/projects/fair-weather-index">How it was built</a>
+                </div>
+            </div>
+            <img class="app-shot" src="/images/apps/fwi-map.png" width="1000" height="462"
+                 alt="A dot-matrix world map in Equal Earth projection. The United States and Europe are painted in greens and teals showing fair-weather scores; the rest of the world is drawn in grey, marking land with no data.">
+        </article>
+    </div>
+</section>
+
+<section class="work wrap">
+    <h2>Selected work</h2>
+    <p class="work-intro">Agents and embedded hardware on one side, corporate emissions
+    reporting on the other. Linked rows have a detail page.</p>
+
+    <div class="group">
+        <h3>Agentic systems &amp; AI</h3>
+
+        <a class="row" href="/projects/project-alfred">
+            <span class="row-year">2026</span>
+            <span>
+                <span class="row-head">
+                    <span class="row-title">Project Alfred</span>
+                    <span class="flag flag--active">Active</span>
+                </span>
+                <span class="row-note">A multi-bridge personal assistant spanning Discord, ESP32
+                and the Gemini Live API, with a custom "Soul" architecture, four-tier memory
+                compression, and deep Home Assistant integration.</span>
+                <span class="row-tech"><span>Python</span><span>Gemini Multimodal Live</span><span>RAG</span><span>Home Assistant</span></span>
+            </span>
+        </a>
+
+        <a class="row" href="/projects/esp32-ui">
+            <span class="row-year">2026</span>
+            <span>
+                <span class="row-head">
+                    <span class="row-title">ESP32-UI</span>
+                    <span class="flag flag--active">Active</span>
+                </span>
+                <span class="row-note">A smart-home control panel for the Waveshare
+                ESP32-S3-Touch whose interface is rebuilt at runtime from MQTT messages, so the
+                screen changes without reflashing the board.</span>
+                <span class="row-tech"><span>C++</span><span>LVGL</span><span>MQTT</span><span>ESP32-S3</span></span>
+            </span>
+        </a>
+
+        <div class="row">
+            <span class="row-year">2026</span>
+            <span>
+                <span class="row-head"><span class="row-title">TASS</span></span>
+                <span class="row-note">A terminal assistant that turns plain English into the
+                correct shell command, aware of whether it is talking to PowerShell or bash, with
+                automatic fallback when a model is unavailable.</span>
+                <span class="row-tech"><span>CLI</span><span>Gemini API</span><span>Python</span></span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="row-year">2026</span>
+            <span>
+                <span class="row-head"><span class="row-title">Polymarket Interactive CLI</span></span>
+                <span class="row-note">A terminal dashboard for prediction markets, reading the
+                Gamma and CLOB APIs for market exploration and order-book execution.</span>
+                <span class="row-tech"><span>Rich</span><span>py_clob_client</span><span>API integration</span></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="group">
+        <h3>Machine learning &amp; data engineering</h3>
+
+        <a class="row" href="/projects/fair-weather-index">
+            <span class="row-year">2026</span>
+            <span>
+                <span class="row-head">
+                    <span class="row-title">Fair Weather Index</span>
+                    <span class="flag flag--live">Live</span>
+                </span>
+                <span class="row-note">An interactive dot-matrix globe scoring three years of
+                observations against a definition of "fair" that the visitor sets. Equal-area on
+                both globe and flat map, so a dot means the same patch of ground either way.</span>
+                <span class="row-tech"><span>JavaScript</span><span>Equal Earth projection</span><span>Binary data packing</span><span>Xweather</span></span>
+            </span>
+        </a>
+
+        <div class="row">
+            <span class="row-year">2025</span>
+            <span>
+                <span class="row-head"><span class="row-title">Comfort Zones</span></span>
+                <span class="row-note">Heatmaps of "comfortable days" across Europe built from
+                ten years of Meteostat history. It's the study that led to Fair Weather Index.</span>
+                <span class="row-tech"><span>Meteostat API</span><span>pandas</span><span>Matplotlib</span></span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="row-year">2024</span>
+            <span>
+                <span class="row-head"><span class="row-title">flipper</span></span>
+                <span class="row-note">A scraping and extraction utility with a Streamlit front
+                end, gathering dynamic web content that ordinary requests cannot reach.</span>
+                <span class="row-tech"><span>Python</span><span>Streamlit</span><span>Selenium</span><span>BeautifulSoup</span></span>
+            </span>
+        </div>
+
+        <a class="row" href="/projects/aqi-forecasting">
+            <span class="row-year">2024</span>
+            <span>
+                <span class="row-head"><span class="row-title">AQI Forecasting</span></span>
+                <span class="row-note">Ozone and pollutant forecasting built as a full ML
+                lifecycle rather than a notebook: Cookiecutter Data Science layout, XGBoost,
+                and tuning someone else could actually reproduce.</span>
+                <span class="row-tech"><span>XGBoost</span><span>MLOps</span><span>GridSearchCV</span><span>scikit-learn</span></span>
+            </span>
+        </a>
+
+        <a class="row" href="/projects/queryasr">
+            <span class="row-year">2023</span>
+            <span>
+                <span class="row-head"><span class="row-title">QueryASR</span></span>
+                <span class="row-note">Semantic search over corporate sustainability reports,
+                turning several-hundred-page PDFs into something you can actually ask a
+                question of.</span>
+                <span class="row-tech"><span>LlamaIndex</span><span>Vector embeddings</span><span>RAG</span><span>Python</span></span>
+            </span>
+        </a>
+
+        <div class="row">
+            <span class="row-year">2023</span>
+            <span>
+                <span class="row-head"><span class="row-title">TradeTracker</span></span>
+                <span class="row-note">Consolidated TD Ameritrade executions into a Google Sheets
+                dashboard, including the awkward part: grouping multi-leg options strategies
+                back into the trades they belong to.</span>
+                <span class="row-tech"><span>TD Ameritrade API</span><span>OAuth2</span><span>Google Sheets API</span></span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="row-year">2023</span>
+            <span>
+                <span class="row-head"><span class="row-title">YouTube Video Summarizer</span></span>
+                <span class="row-note">Whisper for transcription, GPT-4 for summary, Streamlit
+                to hold it together.</span>
+                <span class="row-tech"><span>Streamlit</span><span>Whisper</span><span>OpenAI API</span></span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="row-year">2023</span>
+            <span>
+                <span class="row-head"><span class="row-title">AskGPT</span></span>
+                <span class="row-note">A voice-controlled assistant and the direct precursor to
+                Project Alfred: the first pass at persona-driven response cycles and audio
+                transcript handling.</span>
+                <span class="row-tech"><span>Python</span><span>OpenAI API</span><span>Whisper</span></span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="row-year">2023</span>
+            <span>
+                <span class="row-head"><span class="row-title">Data science cluster</span></span>
+                <span class="row-note">Yelp rating regression over 170&nbsp;MB of JSON, Twitter
+                virality classification with KNN and naive Bayes, and OKCupid profile analysis.</span>
+                <span class="row-tech"><span>scikit-learn</span><span>Regression</span><span>Classification</span></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="group">
+        <h3>Sustainability &amp; corporate systems</h3>
+
+        <a class="row" href="/projects/climate-data-hub">
+            <span class="row-year">2025</span>
+            <span>
+                <span class="row-head">
+                    <span class="row-title">Climate Data Hub</span>
+                    <span class="flag flag--active">Active</span>
+                </span>
+                <span class="row-note">A central GHG emissions ledger for science-based-target
+                reporting, processing half a million rows of annual ERP data a year to full
+                emission-factor coverage.</span>
+                <span class="row-tech"><span>Power BI Dataflows</span><span>DAX</span><span>ERP integration</span><span>GHG Protocol</span></span>
+            </span>
+        </a>
+
+        <a class="row" href="/projects/commute-emissions">
+            <span class="row-year"></span>
+            <span>
+                <span class="row-head"><span class="row-title">Commute emissions analysis</span></span>
+                <span class="row-note">Scope 3.7 emissions for more than 30,000 employees,
+                estimated from real commute distances rather than a national average.</span>
+                <span class="row-tech"><span>Bing Maps API</span><span>Geospatial</span><span>GHG Protocol</span></span>
+            </span>
+        </a>
+
+        <a class="row" href="/projects/epa-emissions-dashboard">
+            <span class="row-year"></span>
+            <span>
+                <span class="row-head"><span class="row-title">EPA emissions dashboard</span></span>
+                <span class="row-note">Eleven years of public EPA facility reporting, half a
+                million rows, consolidated into one Power BI model you can actually navigate.</span>
+                <span class="row-tech"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Python</span></span>
+            </span>
+        </a>
+
+        <div class="row">
+            <span class="row-year"></span>
+            <span>
+                <span class="row-head"><span class="row-title">Queue notification systems</span></span>
+                <span class="row-note">A "polite" IT support queue in Power Apps and Teams.
+                Requesters can see where their ticket actually is, so they stop asking.</span>
+                <span class="row-tech"><span>Power Platform</span><span>Microsoft Teams</span></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="group">
+        <h3>Leadership &amp; learning design</h3>
+
+        <div class="row">
+            <span class="row-year"></span>
+            <span>
+                <span class="row-head"><span class="row-title">Collaboration Open House</span></span>
+                <span class="row-note">Organised and led international service-knowledge
+                conferences across Europe, moving what technical teams knew to the people who
+                needed it.</span>
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="row-year"></span>
+            <span>
+                <span class="row-head"><span class="row-title">Interactive business upskilling</span></span>
+                <span class="row-note">Co-developed Articulate 360 training that took a business
+                unit of 40,000+ people onto new collaboration tooling.</span>
+                <span class="row-tech"><span>Articulate 360</span><span>Instructional design</span></span>
+            </span>
+        </div>
+    </div>
+
+    <div class="group">
+        <h3>Earlier</h3>
+
+        <div class="row">
+            <span class="row-year">2022</span>
+            <span>
+                <span class="row-head"><span class="row-title">Habit Tracker CLI</span></span>
+                <span class="row-note">A command-line habit tracker on SQLite. The university
+                final project, and the first thing here that someone other than me used.</span>
+                <span class="row-tech"><span>Python</span><span>SQLite</span><span>CLI</span></span>
+            </span>
+        </div>
+    </div>
+</section>
+
+<section class="skills wrap">
+    <h2>What I work with</h2>
+    <div class="skills-grid">
+        <div>
+            <h3>AI and agents</h3>
+            <ul>
+                <li>Gemini Multimodal Live API</li>
+                <li>RAG and vector embeddings</li>
+                <li>Whisper and LLM integration</li>
+                <li>Autonomous agent orchestration</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Data science and ML</h3>
+            <ul>
+                <li>Python: pandas, scikit-learn</li>
+                <li>XGBoost and MLOps pipelines</li>
+                <li>Geospatial and emissions analysis</li>
+                <li>SQL: PostgreSQL, SQLite</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Reporting and BI</h3>
+            <ul>
+                <li>Power BI and advanced DAX</li>
+                <li>Power Platform: Apps, Automate</li>
+                <li>ERP integration</li>
+                <li>GHG Protocol reporting</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="certs wrap">
+    <h2>Certifications</h2>
+    <div class="cert-track">
+        <button class="cert" type="button"
+                data-title="Machine Learning Specialization" data-org="DeepLearning.AI and Stanford"
+                data-why="A three-course series covering supervised and unsupervised learning and the practices that keep a real ML system working after it ships.">
+            <img src="/images/badges/ML_specialization.png" width="400" height="309" alt="Machine Learning Specialization" loading="lazy">
+        </button>
+        <button class="cert" type="button"
+                data-title="Advanced Learning Algorithms" data-org="DeepLearning.AI"
+                data-why="Neural networks, decision trees and multi-class classification: building and tuning models for data that isn't linearly separable.">
+            <img src="/images/badges/Advanced_learning_algorithms.png" width="400" height="306" alt="Advanced Learning Algorithms" loading="lazy">
+        </button>
+        <button class="cert" type="button"
+                data-title="Unsupervised Learning, Recommenders, Reinforcement Learning" data-org="DeepLearning.AI"
+                data-why="Clustering, anomaly detection and recommender systems: finding structure in data that arrives without labels.">
+            <img src="/images/badges/Unsupervised_learning.png" width="400" height="307" alt="Unsupervised Learning" loading="lazy">
+        </button>
+        <button class="cert" type="button"
+                data-title="Supervised Machine Learning" data-org="DeepLearning.AI"
+                data-why="Linear and logistic regression from the mathematics up, which is what makes model evaluation more than guesswork.">
+            <img src="/images/badges/Coursera_Supervised_Machine_Learning.png" width="400" height="308" alt="Supervised Machine Learning" loading="lazy">
+        </button>
+        <button class="cert" type="button"
+                data-title="AI Skills Challenge" data-org="Microsoft"
+                data-why="Azure AI services (Azure OpenAI, Cognitive Search, Form Recognizer), with an emphasis on getting them into production.">
+            <img src="/images/badges/AI Skills Challenge - badge - EN-US.png" width="400" height="290" alt="Microsoft AI Skills Challenge" loading="lazy">
+        </button>
+        <button class="cert" type="button"
+                data-title="Power BI Data Analyst Associate" data-org="Microsoft"
+                data-why="Data modelling, DAX and visualisation: the toolset behind the Climate Data Hub and the EPA emissions work.">
+            <img src="/images/badges/PowerBI.png" width="400" height="352" alt="Power BI Data Analyst Associate" loading="lazy">
+        </button>
+        <button class="cert" type="button"
+                data-title="Build a Machine Learning Model with Python" data-org="Codecademy"
+                data-why="The practical lifecycle: cleaning data, engineering features and deploying with scikit-learn.">
+            <img src="/images/badges/Codecademy_Build_MLModel_Python.png" width="400" height="316" alt="Build a Machine Learning Model with Python" loading="lazy">
+        </button>
+    </div>
+</section>
+
+</main>
+
+<dialog class="cert-dialog" id="certDialog" aria-labelledby="certTitle">
+    <div class="cert-dialog-inner">
+        <img id="certImg" src="" alt="" width="400" height="316">
+        <div>
+            <h3 id="certTitle"></h3>
+            <p class="org" id="certOrg"></p>
+            <p class="why" id="certWhy"></p>
+            <button class="btn btn--secondary" type="button" id="certClose">Close</button>
+        </div>
+    </div>
+</dialog>
+
+<footer class="foot wrap">
+    <p>&copy; 2026 Jonathan Woodley</p>
+    <div class="foot-links">
+        <a href="https://github.com/woodleyj" rel="me noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+            GitHub</a>
+        <a href="https://www.linkedin.com/in/jonathanwoodley" rel="me noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.3a1.8 1.8 0 1 1 0-3.5 1.8 1.8 0 0 1 0 3.5zM19 19h-3v-4.4c0-1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3V19h-3v-9h2.9v1.2h.04a3.2 3.2 0 0 1 2.9-1.6c3.1 0 3.7 2 3.7 4.7z"/></svg>
+            LinkedIn</a>
+        <a href="mailto:contact@woodleyj.io">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg>
+            Email</a>
+    </div>
+</footer>
+
+<script>
+    const dialog = document.getElementById('certDialog');
+    document.querySelectorAll('.cert').forEach(cert => {
+        cert.addEventListener('click', () => {
+            const img = cert.querySelector('img');
+            document.getElementById('certImg').src = img.src;
+            document.getElementById('certImg').alt = img.alt;
+            document.getElementById('certTitle').textContent = cert.dataset.title;
+            document.getElementById('certOrg').textContent = cert.dataset.org;
+            document.getElementById('certWhy').textContent = cert.dataset.why;
+            dialog.showModal();
         });
-
-        const closeAll = () => {
-            modal.classList.remove('active');
-            blurOverlay.classList.remove('active');
-            document.body.classList.remove('cert-open');
-            if (lastFocused) lastFocused.focus();
-        };
-
-        blurOverlay.addEventListener('click', closeAll);
-        closeBtn.addEventListener('click', closeAll);
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeAll();
-        });
-    </script>
+    });
+    document.getElementById('certClose').addEventListener('click', () => dialog.close());
+    // Clicking the backdrop closes; clicks inside the panel must not.
+    dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+</script>
 
 </body>
 </html>
