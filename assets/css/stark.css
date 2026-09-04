@@ -15,7 +15,8 @@
    apps panel the accent would drop to 2.6:1, so that panel uses white
    and #CCC only, and spends no blue at all.
 
-   Class names are inherited from pi.css / adaline.css unchanged, so a
+   Class names are inherited unchanged from the previous themes (pi, then
+   adaline before it — both in git history, no longer in the tree), so a
    future re-skin stays a single-file swap. Only the header nav is new.
    ================================================================== */
 
