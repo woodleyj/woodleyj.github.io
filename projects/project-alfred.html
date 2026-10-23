@@ -41,31 +41,28 @@
 <div class="proj-body wrap" id="main">
 
     <h2>One assistant, several front doors</h2>
-     <p>Most assistant projects pick a single surface and live there. Alfred is built the other
-     way round: the assistant is the constant, and Discord, an ESP32 touch panel and the Gemini
-     Multimodal Live API are bridges into it. Ask it something in chat, then follow up out loud
-     an hour later, and it is the same conversation.</p>
-     <p>That constraint drives most of the architecture. Every bridge has different latency,
-     different input modality and a different idea of what a "message" is, so the core has to
-     hold state that none of them own.</p>
+     <p>Alfred isn't tied to one surface. Discord, an ESP32 touch panel, and the Gemini
+     Multimodal Live API are all just bridges into the same assistant. Ask it something in chat,
+     then follow up out loud an hour later, and it's the same conversation.</p>
+     <p>Every bridge has different latency, a different input type, and a different idea of what
+     a "message" even is, so the core holds its own state rather than leaving it to any one
+     bridge.</p>
 
     <h2>Memory that survives the context window</h2>
      <p>A live voice assistant runs out of context quickly. Alfred handles this with a
      four-tier memory compression system rather than a single rolling buffer: recent exchanges
      stay verbatim, older ones are progressively summarised, and durable facts get pulled out
      to retrieve by relevance instead of replaying every turn.</p>
-     <p>The effect is that a long-running assistant stops paying for its own history on every
-     request, and stops forgetting things that mattered three days ago.</p>
+     <p>That way it isn't re-reading its entire history on every request, and it doesn't forget
+     things that mattered three days ago.</p>
 
     <h2>The Soul architecture</h2>
-     <p>Persona is kept as its own layer rather than stuffed into a system prompt and hoped
-     for. Separating the character of the assistant from its capabilities means the behaviour
-     stays stable when tools, bridges or the underlying model change.</p>
+     <p>Persona is its own layer, separate from the model and the tools it calls. Swap a bridge
+     or change the model underneath and the character stays the same.</p>
 
     <h2>Acting on the house</h2>
-     <p>Home Assistant integration turns it from a chat interface into something that manages
-     an estate. It reads sensor state and acts on it, so a request gets answered with a change
-     in the world instead of a paragraph about the change.</p>
+     <p>It hooks into Home Assistant to read sensor state and control devices directly: lights,
+     thermostats, whatever the request calls for.</p>
 
     <div class="spec"><dl><dt>Role</dt><dd>Sole developer</dd><dt>Status</dt><dd>In active development</dd><dt>Bridges</dt><dd>Discord, ESP32 panel, Gemini Live API</dd><dt>Stack</dt><dd>Python, Gemini Multimodal Live, RAG, Home Assistant</dd></dl></div>
 </div>

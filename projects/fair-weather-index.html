@@ -65,9 +65,8 @@
      <p>The archive covers the United States and Europe. Everywhere else is drawn grey: it is
      land, it is not weather. The border between a coloured United States and a grey Mexico is
      where the dataset stops, not where the climate changes.</p>
-     <p>This is the decision the project is most opinionated about. Interpolating a colour
-     across Africa from an airfield a thousand miles away would have produced a prettier map
-     and a dishonest one.</p>
+     <p>Interpolating a colour across Africa from an airfield a thousand miles away would make
+     a prettier map, but a dishonest one.</p>
 
     <h2>Under the hood</h2>
      <p>2,281 stations were harvested and thinned to 961: the keeper in each cell of about
@@ -100,13 +99,10 @@
        <li>No snow and no UV. The observations endpoint reports neither.</li>
        <li>European rainfall depth is estimated, learned from US rainfall. The dry/wet split is
        sound; the millimetres are a climatological expectation.</li>
-       <li>Europe is harvested to about three fifths of its grid: the run stopped on a monthly
-       token budget. Centres are worked in scattered order precisely so that stopping early
-       costs a little density everywhere rather than an entire region.</li>
      </ul>
     <figure class="figure"><img src="/images/apps/fwi-timeline.png" alt="A two-ink timeline trace for a single reporting station across the year." width="760" height="499" loading="lazy"><figcaption>The standings ring reads the year as 365 spokes, answering when a place is fair: something the map alone can't show.</figcaption></figure>
 
-    <div class="spec"><dl><dt>Role</dt><dd>Design, data pipeline, and front end</dd><dt>Data</dt><dd>Xweather daily station summaries</dd><dt>Period</dt><dd>Aug 2023 – Jul 2026, 1,089 days</dd><dt>Stations</dt><dd>961 after thinning, across 32 countries</dd><dt>Stack</dt><dd>Vanilla JavaScript, Canvas, Node build pipeline</dd><dt>Hosting</dt><dd>Caddy behind a Cloudflare Tunnel</dd></dl></div>
+    <div class="spec"><dl><dt>Role</dt><dd>Design, data pipeline, and front end</dd><dt>Data</dt><dd>Xweather daily station summaries</dd><dt>Period</dt><dd>Aug 2023 – Jul 2026, 1,089 days</dd><dt>Stations</dt><dd>961 after thinning, across 32 countries</dd><dt>Stack</dt><dd>Vanilla JavaScript, Canvas, Node build pipeline</dd></dl></div>
 </div>
 </article>
 
